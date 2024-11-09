@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Guna.UI2.Native.WinApi;
 
 namespace PeluTop_Practica
 {
@@ -16,13 +17,36 @@ namespace PeluTop_Practica
         public CONFIRMACION(lblTituloFormHijo mainFormInstance)
         {
             InitializeComponent();
-            mainForm = mainFormInstance;
+            this.mainForm = mainFormInstance;
+            cmbNombre.Texts = "Diego";
+            cmbPeluquero.Texts = SeleccionDatos.PeluqueroSeleccionado;
+            cmbPrecio.Texts = SeleccionDatos.PrecioSeleccionado;
+            cmbServicio.Texts = SeleccionDatos.ServicioSeleccionado;
+
+
+        }
+        //Boton de aceptar
+        private void btnServicio4_Click(object sender, EventArgs e)
+        {
+            // Abre el formulario INICIO
+            mainForm.OpenChildForm(new INICIO());
+            this.Dispose();
+            PantallaCargaConf conf = new PantallaCargaConf();
+            conf.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void BtnCancelarCita_Click(object sender, EventArgs e)
         {
-           // Abre el formulario INICIO
+            // Abre el formulario INICIO
             mainForm.OpenChildForm(new INICIO());
+        }
+
+        private void rjComboBox1_OnSelectedIndexChanged(object sender, EventArgs e)
+        {           
+        }
+
+        private void cmbServicio_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
         }
     }
     

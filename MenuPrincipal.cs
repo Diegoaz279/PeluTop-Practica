@@ -40,9 +40,9 @@ namespace PeluTop_Practica
         public struct RGBColors
         {
             public static System.Drawing.Color color1 = System.Drawing.Color.FromArgb(172, 126, 241); // Asegura el uso de System.Drawing.Color
-            public static System.Drawing.Color color2 = System.Drawing.Color.FromArgb(249, 118, 176);
+            public static System.Drawing.Color color2 = System.Drawing.Color.FromArgb(255,0,0);
             public static System.Drawing.Color color3 = System.Drawing.Color.FromArgb(253, 158, 114);
-            public static System.Drawing.Color color4 = System.Drawing.Color.FromArgb(95, 77,221);
+            public static System.Drawing.Color color4 = System.Drawing.Color.FromArgb(122, 214,46);
             public static System.Drawing.Color color5 = System.Drawing.Color.FromArgb(249,88,155);
             public static System.Drawing.Color color6 = System.Drawing.Color.FromArgb(24,161,251);
         }
@@ -57,7 +57,7 @@ namespace PeluTop_Practica
 
                 // Configura el botón seleccionado
                 currenBtn = (IconButton)senderBtn;
-                currenBtn.BackColor = System.Drawing.Color.FromArgb(37, 36, 81);
+                currenBtn.BackColor = System.Drawing.Color.FromArgb(20, 104, 177);
                 currenBtn.ForeColor = color;
                 currenBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currenBtn.IconColor = color;
@@ -79,7 +79,7 @@ namespace PeluTop_Practica
             if (currenBtn != null)
             {
                 // Restablece el estilo original del botón anterior
-                currenBtn.BackColor = System.Drawing.Color.FromArgb(31, 30, 68);
+                currenBtn.BackColor = System.Drawing.Color.FromArgb(18, 39, 75);
                 currenBtn.ForeColor = System.Drawing.Color.Gainsboro;
                 currenBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currenBtn.IconColor = System.Drawing.Color.Gainsboro;
@@ -118,7 +118,7 @@ namespace PeluTop_Practica
         }
         private void iconPeluqueria_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color2);
+            ActivateButton(sender, RGBColors.color4);
             // Aquí pasa 'this', que hace referencia a la instancia actual de lblTituloFormHijo
             OpenChildForm(new PELUQUEROS(this)); // Pasa 'this' como argumento
 
@@ -175,6 +175,22 @@ namespace PeluTop_Practica
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-       
+        private void rjCircularPictureBox1_Click(object sender, EventArgs e)
+        {
+            ActualFormHijo?.Close();
+            Reset();
+        }
+
+        private void iconoFormHijoActual_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+    public static class SeleccionDatos
+    {
+        
+        public static string PeluqueroSeleccionado { get; set; }  // Guardará el nombre del peluquero
+        public static string PrecioSeleccionado { get; set; }  // Guardará el precio
+        public static string ServicioSeleccionado { get; set; }  // Guardará el servicio
     }
 }

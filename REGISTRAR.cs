@@ -27,12 +27,10 @@ namespace PeluTop_Practica
         {
             this.Close();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            // Guardar las credenciales en las propiedades estáticas
+        private void btniNGRESAR_Click(object sender, EventArgs e)
+        {// Guardar las credenciales en las propiedades estáticas
             Credenciale.UsuarioRegistrado = txtUsuarioR.Text;
-            Credenciale.ContrasenaRegistrada = txtContrasena.Text;
+            Credenciale.ContrasenaRegistrada = txtContraseñaR.Text;
 
             MessageBox.Show("Usuario Registrado con éxito");
 
@@ -40,6 +38,11 @@ namespace PeluTop_Practica
             fmlLogin fmlLogin = new fmlLogin();
             fmlLogin.ShowDialog();
             this.Dispose();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

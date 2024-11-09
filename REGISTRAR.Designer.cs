@@ -30,13 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btniNGRESAR = new RJCodeAdvance.RJControls.RJButton();
+            this.txtNombreR = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtCorreo = new RJCodeAdvance.RJControls.RJTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtUsuarioR = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtContraseñaR = new RJCodeAdvance.RJControls.RJTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtNombreCompleto = new System.Windows.Forms.TextBox();
-            this.txtCorreo = new System.Windows.Forms.TextBox();
-            this.txtUsuarioR = new System.Windows.Forms.TextBox();
-            this.txtContrasena = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnRegistrar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
@@ -53,109 +53,157 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightCyan;
-            this.panel1.Controls.Add(this.btnRegistrar);
-            this.panel1.Controls.Add(this.txtContrasena);
-            this.panel1.Controls.Add(this.txtUsuarioR);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(39)))), ((int)(((byte)(75)))));
+            this.panel1.Controls.Add(this.btniNGRESAR);
+            this.panel1.Controls.Add(this.txtNombreR);
             this.panel1.Controls.Add(this.txtCorreo);
-            this.panel1.Controls.Add(this.txtNombreCompleto);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.txtUsuarioR);
+            this.panel1.Controls.Add(this.txtContraseñaR);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(517, 636);
+            this.panel1.Size = new System.Drawing.Size(611, 636);
             this.panel1.TabIndex = 1;
+            // 
+            // btniNGRESAR
+            // 
+            this.btniNGRESAR.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btniNGRESAR.BackColor = System.Drawing.Color.White;
+            this.btniNGRESAR.BackgroundColor = System.Drawing.Color.White;
+            this.btniNGRESAR.BorderColor = System.Drawing.Color.Black;
+            this.btniNGRESAR.BorderRadius = 25;
+            this.btniNGRESAR.BorderSize = 3;
+            this.btniNGRESAR.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btniNGRESAR.FlatAppearance.BorderSize = 0;
+            this.btniNGRESAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btniNGRESAR.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F, System.Drawing.FontStyle.Bold);
+            this.btniNGRESAR.ForeColor = System.Drawing.Color.Black;
+            this.btniNGRESAR.Location = new System.Drawing.Point(197, 520);
+            this.btniNGRESAR.Name = "btniNGRESAR";
+            this.btniNGRESAR.Size = new System.Drawing.Size(182, 58);
+            this.btniNGRESAR.TabIndex = 33;
+            this.btniNGRESAR.Text = "REGISTRAR";
+            this.btniNGRESAR.TextColor = System.Drawing.Color.Black;
+            this.btniNGRESAR.UseVisualStyleBackColor = false;
+            this.btniNGRESAR.Click += new System.EventHandler(this.btniNGRESAR_Click);
+            // 
+            // txtNombreR
+            // 
+            this.txtNombreR.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtNombreR.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNombreR.BorderColor = System.Drawing.Color.Red;
+            this.txtNombreR.BorderFocusColor = System.Drawing.Color.MediumBlue;
+            this.txtNombreR.BorderRadius = 20;
+            this.txtNombreR.BorderSize = 1;
+            this.txtNombreR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
+            this.txtNombreR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNombreR.Location = new System.Drawing.Point(138, 215);
+            this.txtNombreR.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreR.Multiline = false;
+            this.txtNombreR.Name = "txtNombreR";
+            this.txtNombreR.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNombreR.PasswordChar = false;
+            this.txtNombreR.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNombreR.PlaceholderText = "";
+            this.txtNombreR.Size = new System.Drawing.Size(313, 40);
+            this.txtNombreR.TabIndex = 30;
+            this.txtNombreR.Texts = "Nombre Completo";
+            this.txtNombreR.UnderlinedStyle = false;
+            // 
+            // txtCorreo
+            // 
+            this.txtCorreo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtCorreo.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCorreo.BorderColor = System.Drawing.Color.Red;
+            this.txtCorreo.BorderFocusColor = System.Drawing.Color.MediumBlue;
+            this.txtCorreo.BorderRadius = 20;
+            this.txtCorreo.BorderSize = 1;
+            this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
+            this.txtCorreo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCorreo.Location = new System.Drawing.Point(138, 287);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCorreo.Multiline = false;
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCorreo.PasswordChar = false;
+            this.txtCorreo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCorreo.PlaceholderText = "";
+            this.txtCorreo.Size = new System.Drawing.Size(313, 40);
+            this.txtCorreo.TabIndex = 29;
+            this.txtCorreo.Texts = "Correo Electronico";
+            this.txtCorreo.UnderlinedStyle = false;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(105, 412);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 25);
+            this.label5.TabIndex = 27;
+            // 
+            // txtUsuarioR
+            // 
+            this.txtUsuarioR.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtUsuarioR.BackColor = System.Drawing.SystemColors.Window;
+            this.txtUsuarioR.BorderColor = System.Drawing.Color.Red;
+            this.txtUsuarioR.BorderFocusColor = System.Drawing.Color.MediumBlue;
+            this.txtUsuarioR.BorderRadius = 20;
+            this.txtUsuarioR.BorderSize = 1;
+            this.txtUsuarioR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
+            this.txtUsuarioR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtUsuarioR.Location = new System.Drawing.Point(138, 359);
+            this.txtUsuarioR.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsuarioR.Multiline = false;
+            this.txtUsuarioR.Name = "txtUsuarioR";
+            this.txtUsuarioR.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtUsuarioR.PasswordChar = false;
+            this.txtUsuarioR.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtUsuarioR.PlaceholderText = "";
+            this.txtUsuarioR.Size = new System.Drawing.Size(313, 40);
+            this.txtUsuarioR.TabIndex = 26;
+            this.txtUsuarioR.Texts = "Usuario";
+            this.txtUsuarioR.UnderlinedStyle = false;
+            // 
+            // txtContraseñaR
+            // 
+            this.txtContraseñaR.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtContraseñaR.BackColor = System.Drawing.SystemColors.Window;
+            this.txtContraseñaR.BorderColor = System.Drawing.Color.Red;
+            this.txtContraseñaR.BorderFocusColor = System.Drawing.Color.MediumBlue;
+            this.txtContraseñaR.BorderRadius = 20;
+            this.txtContraseñaR.BorderSize = 1;
+            this.txtContraseñaR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
+            this.txtContraseñaR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtContraseñaR.Location = new System.Drawing.Point(138, 431);
+            this.txtContraseñaR.Margin = new System.Windows.Forms.Padding(4);
+            this.txtContraseñaR.Multiline = false;
+            this.txtContraseñaR.Name = "txtContraseñaR";
+            this.txtContraseñaR.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtContraseñaR.PasswordChar = false;
+            this.txtContraseñaR.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtContraseñaR.PlaceholderText = "";
+            this.txtContraseñaR.Size = new System.Drawing.Size(313, 40);
+            this.txtContraseñaR.TabIndex = 25;
+            this.txtContraseñaR.Texts = "Contraseña";
+            this.txtContraseñaR.UnderlinedStyle = false;
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(43, 124);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(103, 93);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(427, 42);
             this.label2.TabIndex = 0;
             this.label2.Text = "REGISTRE SUS DATOS";
-            // 
-            // txtNombreCompleto
-            // 
-            this.txtNombreCompleto.BackColor = System.Drawing.Color.LightBlue;
-            this.txtNombreCompleto.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombreCompleto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreCompleto.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreCompleto.Location = new System.Drawing.Point(101, 252);
-            this.txtNombreCompleto.Multiline = true;
-            this.txtNombreCompleto.Name = "txtNombreCompleto";
-            this.txtNombreCompleto.Size = new System.Drawing.Size(292, 36);
-            this.txtNombreCompleto.TabIndex = 2;
-            this.txtNombreCompleto.Text = "Nombre Completo";
-            // 
-            // txtCorreo
-            // 
-            this.txtCorreo.BackColor = System.Drawing.Color.LightBlue;
-            this.txtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCorreo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCorreo.Location = new System.Drawing.Point(101, 317);
-            this.txtCorreo.Multiline = true;
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(292, 35);
-            this.txtCorreo.TabIndex = 4;
-            this.txtCorreo.Text = "Correo Electronico";
-            // 
-            // txtUsuarioR
-            // 
-            this.txtUsuarioR.BackColor = System.Drawing.Color.LightBlue;
-            this.txtUsuarioR.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsuarioR.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuarioR.ForeColor = System.Drawing.Color.DimGray;
-            this.txtUsuarioR.Location = new System.Drawing.Point(101, 382);
-            this.txtUsuarioR.Multiline = true;
-            this.txtUsuarioR.Name = "txtUsuarioR";
-            this.txtUsuarioR.Size = new System.Drawing.Size(292, 34);
-            this.txtUsuarioR.TabIndex = 6;
-            this.txtUsuarioR.Text = "Usuario";
-            // 
-            // txtContrasena
-            // 
-            this.txtContrasena.BackColor = System.Drawing.Color.LightBlue;
-            this.txtContrasena.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtContrasena.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContrasena.ForeColor = System.Drawing.Color.DimGray;
-            this.txtContrasena.Location = new System.Drawing.Point(101, 441);
-            this.txtContrasena.Multiline = true;
-            this.txtContrasena.Name = "txtContrasena";
-            this.txtContrasena.Size = new System.Drawing.Size(292, 34);
-            this.txtContrasena.TabIndex = 7;
-            this.txtContrasena.Text = "Contraseña";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Showcard Gothic", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Location = new System.Drawing.Point(688, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(277, 68);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "PELUTOP";
-            // 
-            // btnRegistrar
-            // 
-            this.btnRegistrar.BackColor = System.Drawing.Color.DimGray;
-            this.btnRegistrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnRegistrar.FlatAppearance.BorderSize = 0;
-            this.btnRegistrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrar.Location = new System.Drawing.Point(167, 518);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(150, 58);
-            this.btnRegistrar.TabIndex = 8;
-            this.btnRegistrar.Text = "REGISTRAR";
-            this.btnRegistrar.UseVisualStyleBackColor = false;
-            this.btnRegistrar.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -166,6 +214,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1201, 636);
             this.panel2.TabIndex = 9;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btnCerrar
             // 
@@ -192,7 +241,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PeluTop_Practica.Properties.Resources.IMG1;
             this.ClientSize = new System.Drawing.Size(1201, 636);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
@@ -213,14 +261,14 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtCorreo;
-        private System.Windows.Forms.TextBox txtNombreCompleto;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtContrasena;
-        private System.Windows.Forms.TextBox txtUsuarioR;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Panel panel2;
         private FontAwesome.Sharp.IconButton btnCerrar;
+        private RJCodeAdvance.RJControls.RJTextBox txtNombreR;
+        private RJCodeAdvance.RJControls.RJTextBox txtCorreo;
+        private System.Windows.Forms.Label label5;
+        private RJCodeAdvance.RJControls.RJTextBox txtUsuarioR;
+        private RJCodeAdvance.RJControls.RJTextBox txtContraseñaR;
+        private RJCodeAdvance.RJControls.RJButton btniNGRESAR;
     }
 }

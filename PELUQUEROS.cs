@@ -20,21 +20,29 @@ namespace PeluTop_Practica
             InitializeComponent();
             mainForm = mainFormInstance;
         }
-
-        private void btnElegir1_Click(object sender, EventArgs e)
+        private void btnPeluquero1_Click(object sender, EventArgs e)
         {
+            // Asigna el peluquero seleccionado a la variable estática
+            SeleccionDatos.PeluqueroSeleccionado = "Juan Mauel";  // Cambia esto por el nombre real del peluquero
             mainForm.OpenChildForm(new SERVICIOS(mainForm));
-
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnPeluquero2_Click(object sender, EventArgs e)
         {
-
+            SeleccionDatos.PeluqueroSeleccionado = "Jhon Mauel";
+            mainForm.OpenChildForm(new SERVICIOS(mainForm));
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnPeluquero3_Click(object sender, EventArgs e)
         {
+            SeleccionDatos.PeluqueroSeleccionado = "Cristian Mejia";
+            mainForm.OpenChildForm(new SERVICIOS(mainForm));
+        }
 
+        private void btnPeluquero4_Click(object sender, EventArgs e)
+        {
+            SeleccionDatos.PeluqueroSeleccionado = "Elias Perez";
+            mainForm.OpenChildForm(new SERVICIOS(mainForm));
         }
     }
 }

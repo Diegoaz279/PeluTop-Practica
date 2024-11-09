@@ -31,29 +31,28 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnEntrar = new System.Windows.Forms.PictureBox();
+            this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
+            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
+            this.btniNGRESAR = new RJCodeAdvance.RJControls.RJButton();
+            this.txtUsuario = new RJCodeAdvance.RJControls.RJTextBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblRegistrarse = new System.Windows.Forms.LinkLabel();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtContraseña = new RJCodeAdvance.RJControls.RJTextBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEntrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(176, 247);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(184, 243);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 26);
             this.label1.TabIndex = 0;
@@ -71,15 +70,15 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.LightCyan;
-            this.panel2.Controls.Add(this.btnEntrar);
-            this.panel2.Controls.Add(this.iconPictureBox2);
-            this.panel2.Controls.Add(this.iconPictureBox1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.lblRegistrarse);
-            this.panel2.Controls.Add(this.txtContraseña);
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(39)))), ((int)(((byte)(75)))));
+            this.panel2.Controls.Add(this.rjCircularPictureBox1);
+            this.panel2.Controls.Add(this.iconPictureBox3);
+            this.panel2.Controls.Add(this.btniNGRESAR);
             this.panel2.Controls.Add(this.txtUsuario);
+            this.panel2.Controls.Add(this.iconPictureBox2);
+            this.panel2.Controls.Add(this.lblRegistrarse);
             this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.txtContraseña);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -87,65 +86,104 @@
             this.panel2.TabIndex = 8;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // btnEntrar
+            // rjCircularPictureBox1
             // 
-            this.btnEntrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEntrar.Image = global::PeluTop_Practica.Properties.Resources.BTN_LOGIN3;
-            this.btnEntrar.Location = new System.Drawing.Point(117, 435);
-            this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(178, 59);
-            this.btnEntrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnEntrar.TabIndex = 7;
-            this.btnEntrar.TabStop = false;
-            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
+            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
+            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox1.BorderSize = 0;
+            this.rjCircularPictureBox1.GradientAngle = 50F;
+            this.rjCircularPictureBox1.Image = global::PeluTop_Practica.Properties.Resources.IMG;
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(123, 23);
+            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(196, 196);
+            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox1.TabIndex = 25;
+            this.rjCircularPictureBox1.TabStop = false;
+            // 
+            // iconPictureBox3
+            // 
+            this.iconPictureBox3.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.iconPictureBox3.ForeColor = System.Drawing.Color.Black;
+            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconPictureBox3.IconColor = System.Drawing.Color.Black;
+            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox3.IconSize = 26;
+            this.iconPictureBox3.Location = new System.Drawing.Point(307, 308);
+            this.iconPictureBox3.Name = "iconPictureBox3";
+            this.iconPictureBox3.Size = new System.Drawing.Size(27, 26);
+            this.iconPictureBox3.TabIndex = 21;
+            this.iconPictureBox3.TabStop = false;
+            // 
+            // btniNGRESAR
+            // 
+            this.btniNGRESAR.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btniNGRESAR.BackColor = System.Drawing.Color.White;
+            this.btniNGRESAR.BackgroundColor = System.Drawing.Color.White;
+            this.btniNGRESAR.BorderColor = System.Drawing.Color.Black;
+            this.btniNGRESAR.BorderRadius = 20;
+            this.btniNGRESAR.BorderSize = 3;
+            this.btniNGRESAR.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btniNGRESAR.FlatAppearance.BorderSize = 0;
+            this.btniNGRESAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btniNGRESAR.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btniNGRESAR.ForeColor = System.Drawing.Color.Black;
+            this.btniNGRESAR.Location = new System.Drawing.Point(141, 457);
+            this.btniNGRESAR.Name = "btniNGRESAR";
+            this.btniNGRESAR.Size = new System.Drawing.Size(150, 42);
+            this.btniNGRESAR.TabIndex = 18;
+            this.btniNGRESAR.Text = "INGRESAR";
+            this.btniNGRESAR.TextColor = System.Drawing.Color.Black;
+            this.btniNGRESAR.UseVisualStyleBackColor = false;
+            this.btniNGRESAR.Click += new System.EventHandler(this.btniNGRESAR_Click);
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.BackColor = System.Drawing.SystemColors.Window;
+            this.txtUsuario.BorderColor = System.Drawing.Color.Black;
+            this.txtUsuario.BorderFocusColor = System.Drawing.Color.Red;
+            this.txtUsuario.BorderRadius = 20;
+            this.txtUsuario.BorderSize = 1;
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtUsuario.Location = new System.Drawing.Point(81, 300);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsuario.Multiline = false;
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Padding = new System.Windows.Forms.Padding(20, 7, 10, 7);
+            this.txtUsuario.PasswordChar = false;
+            this.txtUsuario.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtUsuario.PlaceholderText = "";
+            this.txtUsuario.Size = new System.Drawing.Size(269, 39);
+            this.txtUsuario.TabIndex = 22;
+            this.txtUsuario.Texts = "Usuario";
+            this.txtUsuario.UnderlinedStyle = false;
             // 
             // iconPictureBox2
             // 
-            this.iconPictureBox2.BackColor = System.Drawing.Color.Linen;
-            this.iconPictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iconPictureBox2.ForeColor = System.Drawing.Color.DimGray;
+            this.iconPictureBox2.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.iconPictureBox2.ForeColor = System.Drawing.Color.Black;
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.iconPictureBox2.IconColor = System.Drawing.Color.DimGray;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.Black;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 35;
-            this.iconPictureBox2.Location = new System.Drawing.Point(311, 361);
+            this.iconPictureBox2.IconSize = 26;
+            this.iconPictureBox2.Location = new System.Drawing.Point(307, 380);
             this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(39, 35);
+            this.iconPictureBox2.Size = new System.Drawing.Size(27, 26);
             this.iconPictureBox2.TabIndex = 6;
             this.iconPictureBox2.TabStop = false;
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.Linen;
-            this.iconPictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.DimGray;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 35;
-            this.iconPictureBox1.Location = new System.Drawing.Point(311, 291);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(39, 35);
-            this.iconPictureBox1.TabIndex = 5;
-            this.iconPictureBox1.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PeluTop_Practica.Properties.Resources.IMG;
-            this.pictureBox1.Location = new System.Drawing.Point(100, 41);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(216, 185);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // lblRegistrarse
             // 
             this.lblRegistrarse.AutoSize = true;
+            this.lblRegistrarse.DisabledLinkColor = System.Drawing.Color.Black;
             this.lblRegistrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistrarse.LinkColor = System.Drawing.Color.Black;
-            this.lblRegistrarse.Location = new System.Drawing.Point(154, 511);
+            this.lblRegistrarse.ForeColor = System.Drawing.Color.White;
+            this.lblRegistrarse.LinkColor = System.Drawing.Color.White;
+            this.lblRegistrarse.Location = new System.Drawing.Point(162, 515);
             this.lblRegistrarse.Name = "lblRegistrarse";
             this.lblRegistrarse.Size = new System.Drawing.Size(102, 22);
             this.lblRegistrarse.TabIndex = 3;
@@ -155,32 +193,26 @@
             // 
             // txtContraseña
             // 
-            this.txtContraseña.BackColor = System.Drawing.Color.LightBlue;
-            this.txtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtContraseña.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.ForeColor = System.Drawing.Color.DimGray;
-            this.txtContraseña.Location = new System.Drawing.Point(81, 361);
+            this.txtContraseña.BackColor = System.Drawing.SystemColors.Window;
+            this.txtContraseña.BorderColor = System.Drawing.Color.Black;
+            this.txtContraseña.BorderFocusColor = System.Drawing.Color.Red;
+            this.txtContraseña.BorderRadius = 20;
+            this.txtContraseña.BorderSize = 1;
+            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtContraseña.Location = new System.Drawing.Point(81, 372);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
+            this.txtContraseña.Multiline = false;
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(269, 35);
-            this.txtContraseña.TabIndex = 2;
-            this.txtContraseña.Text = "Contraseña";
-            this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);
-            this.txtContraseña.Leave += new System.EventHandler(this.txtContraseña_Leave);
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.BackColor = System.Drawing.Color.LightBlue;
-            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.ForeColor = System.Drawing.Color.DimGray;
-            this.txtUsuario.Location = new System.Drawing.Point(81, 291);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(269, 35);
-            this.txtUsuario.TabIndex = 1;
-            this.txtUsuario.Text = "Usuario";
-            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
-            this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
-            this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
+            this.txtContraseña.Padding = new System.Windows.Forms.Padding(20, 7, 10, 7);
+            this.txtContraseña.PasswordChar = false;
+            this.txtContraseña.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtContraseña.PlaceholderText = "";
+            this.txtContraseña.Size = new System.Drawing.Size(269, 39);
+            this.txtContraseña.TabIndex = 19;
+            this.txtContraseña.Texts = "Contraseña";
+            this.txtContraseña.UnderlinedStyle = false;
+            this.txtContraseña._TextChanged += new System.EventHandler(this.txtContraseñaa__TextChanged);
             // 
             // iconButton1
             // 
@@ -213,18 +245,6 @@
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Showcard Gothic", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(575, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(277, 68);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "PELUTOP";
-            // 
             // fmlLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -232,23 +252,21 @@
             this.BackgroundImage = global::PeluTop_Practica.Properties.Resources.IMG1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1004, 583);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fmlLogin";
+            this.Opacity = 0.98D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEntrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -257,15 +275,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.LinkLabel lblRegistrarse;
-        private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
-        private System.Windows.Forms.PictureBox btnEntrar;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton btnCerrar;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtContraseña;
+        private RJCodeAdvance.RJControls.RJButton btniNGRESAR;
+        private RJCodeAdvance.RJControls.RJTextBox txtContraseña;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
+        private RJCodeAdvance.RJControls.RJTextBox txtUsuario;
+        private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
     }
 }
