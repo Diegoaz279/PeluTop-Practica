@@ -13,16 +13,10 @@ namespace PeluTop_Practica
 {
     public partial class PantallaCargaConf : Form
     {
-        
-
         public PantallaCargaConf()
         {
             InitializeComponent();
-            
-
         }
-
-
         private async void PantallaCargaConf_Load(object sender, EventArgs e)
         {
             Task<string> task = new Task<string>(Solicitud);
@@ -34,6 +28,11 @@ namespace PeluTop_Practica
         {
             Thread.Sleep(10000);
             return "Terminada La solicitud";
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

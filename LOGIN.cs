@@ -15,38 +15,34 @@ namespace PeluTop_Practica
     {
         public fmlLogin()
         {
-            InitializeComponent();
-           
+            InitializeComponent();       
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
-
-
         private void txtUsuario_TextChanged(object sender, EventArgs e)
         {
 
         }
-
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
         private void lblRegistrarse_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Dispose();
             REGISTRAR registrar = new REGISTRAR();
             registrar.ShowDialog();
-            this.Hide();
+           
         }
         private void btniNGRESAR_Click(object sender, EventArgs e)
         {
-
-            this.DialogResult = DialogResult.OK; // Establece el resultado en OK
-            this.Close(); // Cierra el formulario de login
-
+            this.Dispose(); // Cierra el formulario de login
+            lblTituloFormHijo MenuPrincipal = new lblTituloFormHijo();
+            MenuPrincipal.ShowDialog();
+           
         }
 
         private void txtContraseñaa__TextChanged(object sender, EventArgs e)
@@ -58,16 +54,42 @@ namespace PeluTop_Practica
         {
 
         }
-     
-    }
-    public class Credenciale
-    {
-        // Propiedades de instancia
-        public string usuario { get; set; }
-        public string contrasena { get; set; }
 
-        // Propiedades estáticas para guardar las credenciales de registro
-        public static string UsuarioRegistrado { get; set; }
-        public static string ContrasenaRegistrada { get; set; }
+        private void txtUsuario_Enter(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "Usuario")
+            {
+                txtUsuario.Text = "";
+                txtUsuario.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void txtContraseña_Enter(object sender, EventArgs e)
+        {
+            if (txtContraseña.Text == "Contraseña")
+            {
+                txtContraseña.Text = "";
+                txtContraseña.ForeColor = Color.DimGray;
+               
+            }
+        }
+        private void txtUsuario_Leave(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "")
+            {
+                txtUsuario.Text = "Usuario";
+                txtUsuario.ForeColor = Color.DimGray;
+            }
+        }
+        private void txtContraseña_Leave(object sender, EventArgs e)
+        {
+            if (txtContraseña.Text == "")
+            {
+                txtContraseña.Text = "Contraseña";
+                txtContraseña.ForeColor = Color.DimGray;
+                
+            }
+        }    
     }
+   
 }

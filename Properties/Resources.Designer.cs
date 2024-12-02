@@ -63,16 +63,6 @@ namespace PeluTop_Practica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AFETADA {
-            get {
-                object obj = ResourceManager.GetObject("AFETADA", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap BARBERSHOP {
             get {
                 object obj = ResourceManager.GetObject("BARBERSHOP", resourceCulture);
@@ -83,59 +73,39 @@ namespace PeluTop_Practica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BIENVENIDO {
-            get {
-                object obj = ResourceManager.GetObject("BIENVENIDO", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap BTN_LOGIN {
-            get {
-                object obj = ResourceManager.GetObject("BTN LOGIN", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap BTN_LOGIN1 {
-            get {
-                object obj = ResourceManager.GetObject("BTN LOGIN1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap BTN_LOGIN2 {
-            get {
-                object obj = ResourceManager.GetObject("BTN LOGIN2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap BTN_LOGIN3 {
-            get {
-                object obj = ResourceManager.GetObject("BTN LOGIN3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap CERQUILO {
             get {
                 object obj = ResourceManager.GetObject("CERQUILO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CERRAR_SESION {
+            get {
+                object obj = ResourceManager.GetObject("CERRAR SESION", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CITAS_EN_CURSO {
+            get {
+                object obj = ResourceManager.GetObject("CITAS EN CURSO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CONFIRMACION {
+            get {
+                object obj = ResourceManager.GetObject("CONFIRMACION", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,6 +233,16 @@ namespace PeluTop_Practica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PELUQEURO_21 {
+            get {
+                object obj = ResourceManager.GetObject("PELUQEURO 21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PULOT {
             get {
                 object obj = ResourceManager.GetObject("PULOT", resourceCulture);
@@ -273,19 +253,9 @@ namespace PeluTop_Practica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PULOT1 {
+        internal static System.Drawing.Bitmap SERVICIOS_DISPONIBLES {
             get {
-                object obj = ResourceManager.GetObject("PULOT1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap SERVICIOS {
-            get {
-                object obj = ResourceManager.GetObject("SERVICIOS", resourceCulture);
+                object obj = ResourceManager.GetObject("SERVICIOS DISPONIBLES", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

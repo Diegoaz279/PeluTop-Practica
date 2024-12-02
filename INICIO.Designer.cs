@@ -28,168 +28,182 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnCancelarCita = new RJCodeAdvance.RJControls.RJButton();
-            this.cmbPrecio = new RJCodeAdvance.RJControls.RJComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cmbServicio = new RJCodeAdvance.RJControls.RJComboBox();
-            this.cmbPeluquero = new RJCodeAdvance.RJControls.RJComboBox();
-            this.cmbNombre = new RJCodeAdvance.RJControls.RJComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblPeluqueros = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnCancelarCita = new RJCodeAdvance.RJControls.RJButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // BtnCancelarCita
-            // 
-            this.BtnCancelarCita.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnCancelarCita.BackColor = System.Drawing.Color.RoyalBlue;
-            this.BtnCancelarCita.BackgroundColor = System.Drawing.Color.RoyalBlue;
-            this.BtnCancelarCita.BorderColor = System.Drawing.Color.Red;
-            this.BtnCancelarCita.BorderRadius = 25;
-            this.BtnCancelarCita.BorderSize = 0;
-            this.BtnCancelarCita.FlatAppearance.BorderSize = 0;
-            this.BtnCancelarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancelarCita.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelarCita.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnCancelarCita.Location = new System.Drawing.Point(374, 478);
-            this.BtnCancelarCita.Name = "BtnCancelarCita";
-            this.BtnCancelarCita.Size = new System.Drawing.Size(222, 57);
-            this.BtnCancelarCita.TabIndex = 73;
-            this.BtnCancelarCita.Text = "CANCERLAR CITA";
-            this.BtnCancelarCita.TextColor = System.Drawing.Color.Gainsboro;
-            this.BtnCancelarCita.UseVisualStyleBackColor = false;
-            this.BtnCancelarCita.Click += new System.EventHandler(this.BtnCancelarCita_Click);
-            // 
-            // cmbPrecio
-            // 
-            this.cmbPrecio.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbPrecio.BorderColor = System.Drawing.Color.White;
-            this.cmbPrecio.BorderSize = 2;
-            this.cmbPrecio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cmbPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cmbPrecio.ForeColor = System.Drawing.Color.DimGray;
-            this.cmbPrecio.IconColor = System.Drawing.Color.Red;
-            this.cmbPrecio.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cmbPrecio.ListTextColor = System.Drawing.Color.DimGray;
-            this.cmbPrecio.Location = new System.Drawing.Point(768, 328);
-            this.cmbPrecio.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cmbPrecio.Name = "cmbPrecio";
-            this.cmbPrecio.Padding = new System.Windows.Forms.Padding(2);
-            this.cmbPrecio.Size = new System.Drawing.Size(200, 39);
-            this.cmbPrecio.TabIndex = 71;
-            this.cmbPrecio.Texts = "";
-            this.cmbPrecio.OnSelectedIndexChanged += new System.EventHandler(this.cmbPrecio_OnSelectedIndexChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(764, 301);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 28);
-            this.label4.TabIndex = 70;
-            this.label4.Text = "Precio:";
-            // 
-            // cmbServicio
-            // 
-            this.cmbServicio.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbServicio.BorderColor = System.Drawing.Color.White;
-            this.cmbServicio.BorderSize = 2;
-            this.cmbServicio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cmbServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cmbServicio.ForeColor = System.Drawing.Color.DimGray;
-            this.cmbServicio.IconColor = System.Drawing.Color.Red;
-            this.cmbServicio.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cmbServicio.ListTextColor = System.Drawing.Color.DimGray;
-            this.cmbServicio.Location = new System.Drawing.Point(504, 328);
-            this.cmbServicio.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cmbServicio.Name = "cmbServicio";
-            this.cmbServicio.Padding = new System.Windows.Forms.Padding(2);
-            this.cmbServicio.Size = new System.Drawing.Size(240, 39);
-            this.cmbServicio.TabIndex = 69;
-            this.cmbServicio.Texts = "";
-            this.cmbServicio.OnSelectedIndexChanged += new System.EventHandler(this.cmbServicio_OnSelectedIndexChanged);
-            // 
-            // cmbPeluquero
-            // 
-            this.cmbPeluquero.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbPeluquero.BorderColor = System.Drawing.Color.White;
-            this.cmbPeluquero.BorderSize = 2;
-            this.cmbPeluquero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cmbPeluquero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cmbPeluquero.ForeColor = System.Drawing.Color.DimGray;
-            this.cmbPeluquero.IconColor = System.Drawing.Color.Red;
-            this.cmbPeluquero.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cmbPeluquero.ListTextColor = System.Drawing.Color.DimGray;
-            this.cmbPeluquero.Location = new System.Drawing.Point(278, 328);
-            this.cmbPeluquero.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cmbPeluquero.Name = "cmbPeluquero";
-            this.cmbPeluquero.Padding = new System.Windows.Forms.Padding(2);
-            this.cmbPeluquero.Size = new System.Drawing.Size(200, 39);
-            this.cmbPeluquero.TabIndex = 68;
-            this.cmbPeluquero.Texts = "";
-            this.cmbPeluquero.OnSelectedIndexChanged += new System.EventHandler(this.cmbPeluquero_OnSelectedIndexChanged);
-            // 
-            // cmbNombre
-            // 
-            this.cmbNombre.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbNombre.BorderColor = System.Drawing.Color.White;
-            this.cmbNombre.BorderSize = 2;
-            this.cmbNombre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cmbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cmbNombre.ForeColor = System.Drawing.Color.DimGray;
-            this.cmbNombre.IconColor = System.Drawing.Color.Red;
-            this.cmbNombre.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cmbNombre.ListTextColor = System.Drawing.Color.DimGray;
-            this.cmbNombre.Location = new System.Drawing.Point(54, 328);
-            this.cmbNombre.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cmbNombre.Name = "cmbNombre";
-            this.cmbNombre.Padding = new System.Windows.Forms.Padding(2);
-            this.cmbNombre.Size = new System.Drawing.Size(200, 39);
-            this.cmbNombre.TabIndex = 67;
-            this.cmbNombre.Texts = "";
-            this.cmbNombre.OnSelectedIndexChanged += new System.EventHandler(this.cmbNombre_OnSelectedIndexChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(500, 301);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 28);
-            this.label3.TabIndex = 66;
-            this.label3.Text = "Servicio:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(274, 301);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 28);
-            this.label2.TabIndex = 65;
-            this.label2.Text = "Perluquero:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 301);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 28);
-            this.label1.TabIndex = 64;
-            this.label1.Text = "Nombre:";
             // 
             // lblPeluqueros
             // 
+            this.lblPeluqueros.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPeluqueros.AutoSize = true;
             this.lblPeluqueros.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPeluqueros.Location = new System.Drawing.Point(271, 118);
             this.lblPeluqueros.Name = "lblPeluqueros";
-            this.lblPeluqueros.Size = new System.Drawing.Size(476, 60);
+            this.lblPeluqueros.Size = new System.Drawing.Size(0, 60);
             this.lblPeluqueros.TabIndex = 63;
-            this.lblPeluqueros.Text = "CITAS EN CURSO";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 178);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 5;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.58483F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.29741F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.852214F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.24138F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.7931F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1019, 501);
+            this.tableLayoutPanel1.TabIndex = 75;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel2.Controls.Add(this.BtnCancelarCita, 1, 1);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(53, 347);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.52632F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.47369F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(911, 80);
+            this.tableLayoutPanel2.TabIndex = 1;
+            // 
+            // BtnCancelarCita
+            // 
+            this.BtnCancelarCita.BackColor = System.Drawing.Color.RoyalBlue;
+            this.BtnCancelarCita.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.BtnCancelarCita.BorderColor = System.Drawing.Color.Red;
+            this.BtnCancelarCita.BorderRadius = 15;
+            this.BtnCancelarCita.BorderSize = 0;
+            this.BtnCancelarCita.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnCancelarCita.FlatAppearance.BorderSize = 0;
+            this.BtnCancelarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancelarCita.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelarCita.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnCancelarCita.Location = new System.Drawing.Point(321, 10);
+            this.BtnCancelarCita.MaximumSize = new System.Drawing.Size(350, 90);
+            this.BtnCancelarCita.Name = "BtnCancelarCita";
+            this.BtnCancelarCita.Size = new System.Drawing.Size(267, 58);
+            this.BtnCancelarCita.TabIndex = 73;
+            this.BtnCancelarCita.Text = "CANCERLAR CITA";
+            this.BtnCancelarCita.TextColor = System.Drawing.Color.Gainsboro;
+            this.BtnCancelarCita.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.guna2DataGridView1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(53, 41);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(911, 251);
+            this.panel1.TabIndex = 2;
+            // 
+            // guna2DataGridView1
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.guna2DataGridView1.ColumnHeadersHeight = 4;
+            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.guna2DataGridView1.Name = "guna2DataGridView1";
+            this.guna2DataGridView1.RowHeadersVisible = false;
+            this.guna2DataGridView1.RowHeadersWidth = 62;
+            this.guna2DataGridView1.RowTemplate.Height = 28;
+            this.guna2DataGridView1.Size = new System.Drawing.Size(911, 251);
+            this.guna2DataGridView1.TabIndex = 0;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
+            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 28;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.AutoScroll = true;
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.761906F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90.4762F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.761905F));
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 1, 1);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1019, 178);
+            this.tableLayoutPanel3.TabIndex = 77;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::PeluTop_Practica.Properties.Resources.CITAS_EN_CURSO;
+            this.pictureBox1.Location = new System.Drawing.Point(51, 74);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(915, 101);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // INICIO
             // 
@@ -197,36 +211,32 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(1019, 679);
-            this.Controls.Add(this.BtnCancelarCita);
-            this.Controls.Add(this.cmbPrecio);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.cmbServicio);
-            this.Controls.Add(this.cmbPeluquero);
-            this.Controls.Add(this.cmbNombre);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.lblPeluqueros);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "INICIO";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "INICIO";
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private RJCodeAdvance.RJControls.RJButton BtnCancelarCita;
-        private RJCodeAdvance.RJControls.RJComboBox cmbPrecio;
-        private System.Windows.Forms.Label label4;
-        private RJCodeAdvance.RJControls.RJComboBox cmbServicio;
-        private RJCodeAdvance.RJControls.RJComboBox cmbPeluquero;
-        private RJCodeAdvance.RJControls.RJComboBox cmbNombre;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblPeluqueros;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private RJCodeAdvance.RJControls.RJButton BtnCancelarCita;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

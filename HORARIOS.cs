@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace PeluTop_Practica
 {
-    public partial class INICIO : Form
+    public partial class HORARIOS : Form
     {
-        public INICIO()
+        public HORARIOS()
         {
             InitializeComponent();
-            
-        }
-
-        private void BtnCancelarCita_Click(object sender, EventArgs e)
-        {
-           MessageBox.Show("Seguro que Quieres Cancerlar la Cita");
-          
         }
     }
 }

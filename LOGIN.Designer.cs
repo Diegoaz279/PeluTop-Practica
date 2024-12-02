@@ -160,6 +160,8 @@
             this.txtUsuario.TabIndex = 22;
             this.txtUsuario.Texts = "Usuario";
             this.txtUsuario.UnderlinedStyle = false;
+            this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
+            this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
             // 
             // iconPictureBox2
             // 
@@ -213,6 +215,8 @@
             this.txtContraseña.Texts = "Contraseña";
             this.txtContraseña.UnderlinedStyle = false;
             this.txtContraseña._TextChanged += new System.EventHandler(this.txtContraseñaa__TextChanged);
+            this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);
+            this.txtContraseña.Leave += new System.EventHandler(this.txtContraseña_Leave);
             // 
             // iconButton1
             // 

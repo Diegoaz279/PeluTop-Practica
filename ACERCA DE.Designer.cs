@@ -35,6 +35,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F);
             this.label1.Location = new System.Drawing.Point(114, 424);
@@ -45,6 +46,7 @@
             // 
             // rjCircularPictureBox1
             // 
+            this.rjCircularPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
             this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
             this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.HotPink;

@@ -74,6 +74,12 @@
     <Compile Include="CONFIRMACION.Designer.cs">
       <DependentUpon>CONFIRMACION.cs</DependentUpon>
     </Compile>
+    <Compile Include="HORARIOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HORARIOS.Designer.cs">
+      <DependentUpon>HORARIOS.cs</DependentUpon>
+    </Compile>
     <Compile Include="INICIO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,7 +92,6 @@
     <Compile Include="LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs" />
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CONFIRMACION.resx">
       <DependentUpon>CONFIRMACION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HORARIOS.resx">
+      <DependentUpon>HORARIOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="INICIO.resx">
       <DependentUpon>INICIO.cs</DependentUpon>
@@ -238,6 +246,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\loading-7528_256.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modelo De Negocio\ModeloDeNegocio.csproj">
+      <Project>{93c74e7f-533a-47f3-abf9-6a28734f83d8}</Project>
+      <Name>ModeloDeNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PELUQEUROs 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PELUQEUROs 11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PELUQEURO 2.jpg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CITAS EN CURSO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CERRAR SESION.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SERVICIOS DISPONIBLES.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CONFIRMACION.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

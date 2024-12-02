@@ -28,189 +28,178 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblPeluqueros = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cmbNombre = new RJCodeAdvance.RJControls.RJComboBox();
-            this.cmbPeluquero = new RJCodeAdvance.RJControls.RJComboBox();
-            this.cmbServicio = new RJCodeAdvance.RJControls.RJComboBox();
-            this.cmbPrecio = new RJCodeAdvance.RJControls.RJComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnConfirnarCita = new RJCodeAdvance.RJControls.RJButton();
-            this.BtnCancelarCita = new RJCodeAdvance.RJControls.RJButton();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.Panel_Conformacion = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.btn_Confirmacion = new RJCodeAdvance.RJControls.RJButton();
+            this.btn_Cancelar = new RJCodeAdvance.RJControls.RJButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.datagrid_Confirmacion = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Panel_Conformacion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datagrid_Confirmacion)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblPeluqueros
+            // Panel_Conformacion
             // 
-            this.lblPeluqueros.AutoSize = true;
-            this.lblPeluqueros.Font = new System.Drawing.Font("Segoe Print", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPeluqueros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(70)))), ((int)(((byte)(143)))));
-            this.lblPeluqueros.Location = new System.Drawing.Point(174, 73);
-            this.lblPeluqueros.Name = "lblPeluqueros";
-            this.lblPeluqueros.Size = new System.Drawing.Size(651, 127);
-            this.lblPeluqueros.TabIndex = 43;
-            this.lblPeluqueros.Text = "CONFIRMACION";
+            this.Panel_Conformacion.ColumnCount = 3;
+            this.Panel_Conformacion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Panel_Conformacion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 926F));
+            this.Panel_Conformacion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.Panel_Conformacion.Controls.Add(this.pictureBox1, 1, 1);
+            this.Panel_Conformacion.Controls.Add(this.tableLayoutPanel2, 1, 5);
+            this.Panel_Conformacion.Controls.Add(this.panel1, 1, 3);
+            this.Panel_Conformacion.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Panel_Conformacion.Location = new System.Drawing.Point(0, 163);
+            this.Panel_Conformacion.Name = "Panel_Conformacion";
+            this.Panel_Conformacion.RowCount = 7;
+            this.Panel_Conformacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Panel_Conformacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 87F));
+            this.Panel_Conformacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
+            this.Panel_Conformacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 183F));
+            this.Panel_Conformacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.Panel_Conformacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 118F));
+            this.Panel_Conformacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 115F));
+            this.Panel_Conformacion.Size = new System.Drawing.Size(997, 460);
+            this.Panel_Conformacion.TabIndex = 76;
             // 
-            // label1
+            // pictureBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 284);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 28);
-            this.label1.TabIndex = 44;
-            this.label1.Text = "Nombre:";
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::PeluTop_Practica.Properties.Resources.CONFIRMACION;
+            this.pictureBox1.Location = new System.Drawing.Point(28, -133);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(920, 81);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // label2
+            // tableLayoutPanel2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(276, 284);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 28);
-            this.label2.TabIndex = 45;
-            this.label2.Text = "Perluquero:";
+            this.tableLayoutPanel2.ColumnCount = 5;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.77778F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.77778F));
+            this.tableLayoutPanel2.Controls.Add(this.btn_Confirmacion, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.btn_Cancelar, 1, 1);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(28, 230);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.61905F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.38095F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(920, 112);
+            this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // label3
+            // btn_Confirmacion
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(502, 284);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 28);
-            this.label3.TabIndex = 46;
-            this.label3.Text = "Servicio:";
+            this.btn_Confirmacion.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Confirmacion.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Confirmacion.BorderColor = System.Drawing.Color.Red;
+            this.btn_Confirmacion.BorderRadius = 15;
+            this.btn_Confirmacion.BorderSize = 0;
+            this.btn_Confirmacion.FlatAppearance.BorderSize = 0;
+            this.btn_Confirmacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Confirmacion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Confirmacion.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_Confirmacion.Location = new System.Drawing.Point(513, 24);
+            this.btn_Confirmacion.MaximumSize = new System.Drawing.Size(350, 90);
+            this.btn_Confirmacion.Name = "btn_Confirmacion";
+            this.btn_Confirmacion.Size = new System.Drawing.Size(147, 65);
+            this.btn_Confirmacion.TabIndex = 73;
+            this.btn_Confirmacion.Text = "CONFIRMAR";
+            this.btn_Confirmacion.TextColor = System.Drawing.Color.Gainsboro;
+            this.btn_Confirmacion.UseVisualStyleBackColor = false;
             // 
-            // cmbNombre
+            // btn_Cancelar
             // 
-            this.cmbNombre.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbNombre.BorderColor = System.Drawing.Color.White;
-            this.cmbNombre.BorderSize = 1;
-            this.cmbNombre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cmbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cmbNombre.ForeColor = System.Drawing.Color.DimGray;
-            this.cmbNombre.IconColor = System.Drawing.Color.Red;
-            this.cmbNombre.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cmbNombre.ListTextColor = System.Drawing.Color.DimGray;
-            this.cmbNombre.Location = new System.Drawing.Point(56, 311);
-            this.cmbNombre.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cmbNombre.Name = "cmbNombre";
-            this.cmbNombre.Padding = new System.Windows.Forms.Padding(1);
-            this.cmbNombre.Size = new System.Drawing.Size(200, 39);
-            this.cmbNombre.TabIndex = 47;
-            this.cmbNombre.Texts = "";
-            this.cmbNombre.OnSelectedIndexChanged += new System.EventHandler(this.rjComboBox1_OnSelectedIndexChanged);
+            this.btn_Cancelar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Cancelar.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Cancelar.BorderColor = System.Drawing.Color.Red;
+            this.btn_Cancelar.BorderRadius = 14;
+            this.btn_Cancelar.BorderSize = 0;
+            this.btn_Cancelar.FlatAppearance.BorderSize = 0;
+            this.btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Cancelar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cancelar.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_Cancelar.Location = new System.Drawing.Point(258, 24);
+            this.btn_Cancelar.MaximumSize = new System.Drawing.Size(350, 90);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(147, 65);
+            this.btn_Cancelar.TabIndex = 74;
+            this.btn_Cancelar.Text = "CANCELAR";
+            this.btn_Cancelar.TextColor = System.Drawing.Color.Gainsboro;
+            this.btn_Cancelar.UseVisualStyleBackColor = false;
             // 
-            // cmbPeluquero
+            // panel1
             // 
-            this.cmbPeluquero.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbPeluquero.BorderColor = System.Drawing.Color.White;
-            this.cmbPeluquero.BorderSize = 1;
-            this.cmbPeluquero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cmbPeluquero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cmbPeluquero.ForeColor = System.Drawing.Color.DimGray;
-            this.cmbPeluquero.IconColor = System.Drawing.Color.Red;
-            this.cmbPeluquero.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cmbPeluquero.ListTextColor = System.Drawing.Color.DimGray;
-            this.cmbPeluquero.Location = new System.Drawing.Point(280, 311);
-            this.cmbPeluquero.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cmbPeluquero.Name = "cmbPeluquero";
-            this.cmbPeluquero.Padding = new System.Windows.Forms.Padding(1);
-            this.cmbPeluquero.Size = new System.Drawing.Size(200, 39);
-            this.cmbPeluquero.TabIndex = 48;
-            this.cmbPeluquero.Texts = "";
+            this.panel1.Controls.Add(this.datagrid_Confirmacion);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(28, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(920, 177);
+            this.panel1.TabIndex = 2;
             // 
-            // cmbServicio
+            // datagrid_Confirmacion
             // 
-            this.cmbServicio.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbServicio.BorderColor = System.Drawing.Color.White;
-            this.cmbServicio.BorderSize = 1;
-            this.cmbServicio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cmbServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cmbServicio.ForeColor = System.Drawing.Color.DimGray;
-            this.cmbServicio.IconColor = System.Drawing.Color.Red;
-            this.cmbServicio.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cmbServicio.ListTextColor = System.Drawing.Color.DimGray;
-            this.cmbServicio.Location = new System.Drawing.Point(506, 311);
-            this.cmbServicio.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cmbServicio.Name = "cmbServicio";
-            this.cmbServicio.Padding = new System.Windows.Forms.Padding(1);
-            this.cmbServicio.Size = new System.Drawing.Size(240, 39);
-            this.cmbServicio.TabIndex = 49;
-            this.cmbServicio.Texts = "";
-            this.cmbServicio.OnSelectedIndexChanged += new System.EventHandler(this.cmbServicio_OnSelectedIndexChanged);
-            // 
-            // cmbPrecio
-            // 
-            this.cmbPrecio.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbPrecio.BorderColor = System.Drawing.Color.White;
-            this.cmbPrecio.BorderSize = 1;
-            this.cmbPrecio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cmbPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cmbPrecio.ForeColor = System.Drawing.Color.DimGray;
-            this.cmbPrecio.IconColor = System.Drawing.Color.Red;
-            this.cmbPrecio.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cmbPrecio.ListTextColor = System.Drawing.Color.DimGray;
-            this.cmbPrecio.Location = new System.Drawing.Point(770, 311);
-            this.cmbPrecio.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cmbPrecio.Name = "cmbPrecio";
-            this.cmbPrecio.Padding = new System.Windows.Forms.Padding(1);
-            this.cmbPrecio.Size = new System.Drawing.Size(200, 39);
-            this.cmbPrecio.TabIndex = 51;
-            this.cmbPrecio.Texts = "";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(766, 284);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 28);
-            this.label4.TabIndex = 50;
-            this.label4.Text = "Precio:";
-            // 
-            // btnConfirnarCita
-            // 
-            this.btnConfirnarCita.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnConfirnarCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(70)))), ((int)(((byte)(143)))));
-            this.btnConfirnarCita.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(70)))), ((int)(((byte)(143)))));
-            this.btnConfirnarCita.BorderColor = System.Drawing.Color.Red;
-            this.btnConfirnarCita.BorderRadius = 20;
-            this.btnConfirnarCita.BorderSize = 0;
-            this.btnConfirnarCita.FlatAppearance.BorderSize = 0;
-            this.btnConfirnarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfirnarCita.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirnarCita.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnConfirnarCita.Location = new System.Drawing.Point(506, 417);
-            this.btnConfirnarCita.Name = "btnConfirnarCita";
-            this.btnConfirnarCita.Size = new System.Drawing.Size(207, 57);
-            this.btnConfirnarCita.TabIndex = 61;
-            this.btnConfirnarCita.Text = "CONFIRMAR CITA";
-            this.btnConfirnarCita.TextColor = System.Drawing.Color.Gainsboro;
-            this.btnConfirnarCita.UseVisualStyleBackColor = false;
-            this.btnConfirnarCita.Click += new System.EventHandler(this.btnServicio4_Click);
-            // 
-            // BtnCancelarCita
-            // 
-            this.BtnCancelarCita.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnCancelarCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(70)))), ((int)(((byte)(143)))));
-            this.BtnCancelarCita.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(70)))), ((int)(((byte)(143)))));
-            this.BtnCancelarCita.BorderColor = System.Drawing.Color.Red;
-            this.BtnCancelarCita.BorderRadius = 20;
-            this.BtnCancelarCita.BorderSize = 0;
-            this.BtnCancelarCita.FlatAppearance.BorderSize = 0;
-            this.BtnCancelarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancelarCita.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelarCita.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnCancelarCita.Location = new System.Drawing.Point(290, 417);
-            this.BtnCancelarCita.Name = "BtnCancelarCita";
-            this.BtnCancelarCita.Size = new System.Drawing.Size(174, 57);
-            this.BtnCancelarCita.TabIndex = 62;
-            this.BtnCancelarCita.Text = "CANCERLAR";
-            this.BtnCancelarCita.TextColor = System.Drawing.Color.Gainsboro;
-            this.BtnCancelarCita.UseVisualStyleBackColor = false;
-            this.BtnCancelarCita.Click += new System.EventHandler(this.BtnCancelarCita_Click);
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.datagrid_Confirmacion.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_Confirmacion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.datagrid_Confirmacion.ColumnHeadersHeight = 4;
+            this.datagrid_Confirmacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagrid_Confirmacion.DefaultCellStyle = dataGridViewCellStyle3;
+            this.datagrid_Confirmacion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.datagrid_Confirmacion.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.datagrid_Confirmacion.Location = new System.Drawing.Point(0, 0);
+            this.datagrid_Confirmacion.Name = "datagrid_Confirmacion";
+            this.datagrid_Confirmacion.RowHeadersVisible = false;
+            this.datagrid_Confirmacion.RowHeadersWidth = 62;
+            this.datagrid_Confirmacion.RowTemplate.Height = 28;
+            this.datagrid_Confirmacion.Size = new System.Drawing.Size(920, 177);
+            this.datagrid_Confirmacion.TabIndex = 0;
+            this.datagrid_Confirmacion.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.datagrid_Confirmacion.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.datagrid_Confirmacion.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.datagrid_Confirmacion.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.datagrid_Confirmacion.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.datagrid_Confirmacion.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.datagrid_Confirmacion.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.datagrid_Confirmacion.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.datagrid_Confirmacion.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.datagrid_Confirmacion.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datagrid_Confirmacion.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.datagrid_Confirmacion.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.datagrid_Confirmacion.ThemeStyle.HeaderStyle.Height = 4;
+            this.datagrid_Confirmacion.ThemeStyle.ReadOnly = false;
+            this.datagrid_Confirmacion.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.datagrid_Confirmacion.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.datagrid_Confirmacion.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datagrid_Confirmacion.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.datagrid_Confirmacion.ThemeStyle.RowsStyle.Height = 28;
+            this.datagrid_Confirmacion.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.datagrid_Confirmacion.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // CONFIRMACION
             // 
@@ -219,37 +208,28 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(997, 623);
-            this.Controls.Add(this.BtnCancelarCita);
-            this.Controls.Add(this.btnConfirnarCita);
-            this.Controls.Add(this.cmbPrecio);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.cmbServicio);
-            this.Controls.Add(this.cmbPeluquero);
-            this.Controls.Add(this.cmbNombre);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblPeluqueros);
+            this.Controls.Add(this.Panel_Conformacion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CONFIRMACION";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CONFIRMACION";
+            this.Panel_Conformacion.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.datagrid_Confirmacion)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label lblPeluqueros;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private RJCodeAdvance.RJControls.RJComboBox cmbNombre;
-        private RJCodeAdvance.RJControls.RJComboBox cmbPeluquero;
-        private RJCodeAdvance.RJControls.RJComboBox cmbServicio;
-        private RJCodeAdvance.RJControls.RJComboBox cmbPrecio;
-        private System.Windows.Forms.Label label4;
-        private RJCodeAdvance.RJControls.RJButton btnConfirnarCita;
-        private RJCodeAdvance.RJControls.RJButton BtnCancelarCita;
+
+        private System.Windows.Forms.TableLayoutPanel Panel_Conformacion;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private RJCodeAdvance.RJControls.RJButton btn_Confirmacion;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2DataGridView datagrid_Confirmacion;
+        private RJCodeAdvance.RJControls.RJButton btn_Cancelar;
     }
 }
