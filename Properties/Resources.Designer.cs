@@ -63,9 +63,29 @@ namespace PeluTop_Practica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AFETADA {
+            get {
+                object obj = ResourceManager.GetObject("AFETADA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BARBERSHOP {
             get {
                 object obj = ResourceManager.GetObject("BARBERSHOP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2024_12_03_230501 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2024-12-03 230501", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

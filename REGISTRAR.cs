@@ -40,5 +40,10 @@ namespace PeluTop_Practica
         {
 
         }
+
+        private void btniNGRESAR_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

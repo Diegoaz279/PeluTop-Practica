@@ -74,12 +74,6 @@
     <Compile Include="CONFIRMACION.Designer.cs">
       <DependentUpon>CONFIRMACION.cs</DependentUpon>
     </Compile>
-    <Compile Include="HORARIOS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HORARIOS.Designer.cs">
-      <DependentUpon>HORARIOS.cs</DependentUpon>
-    </Compile>
     <Compile Include="INICIO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,9 +123,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CONFIRMACION.resx">
       <DependentUpon>CONFIRMACION.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HORARIOS.resx">
-      <DependentUpon>HORARIOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="INICIO.resx">
       <DependentUpon>INICIO.cs</DependentUpon>
@@ -273,6 +264,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CONFIRMACION.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AFETADA1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2024-12-03 230501.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

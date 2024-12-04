@@ -94,13 +94,7 @@ namespace PeluTop_Practica
         }
 
      //picture box inicio
-        private void iconPictureBox1_Click(object sender, EventArgs e)
-        {
-            lblTituloFormHijo lb = new lblTituloFormHijo();
-            lb.Close();
-            fmlLogin login = new fmlLogin();
-            login.Show();     
-        }
+      
 
         //todo Boton De Acerca De
         private void btnAcercaDe_Click(object sender, EventArgs e)
@@ -111,6 +105,18 @@ namespace PeluTop_Practica
             // Llamar al método para mostrar el formulario en el panel `panel_Conteiner`
             metodos.MostrarFormularioEnPanel(acercaDe, panel_Conteiner);
         }
-      
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Logout_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+
+            fmlLogin login = new fmlLogin();
+            login.ShowDialog();
+        }
     }
 }

@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(lblTituloFormHijo));
             this.panel_Conteiner = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pcbInico = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAcercaDe = new Guna.UI2.WinForms.Guna2Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panel_Opciones = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tp_Loguot = new System.Windows.Forms.TableLayoutPanel();
             this.btn_Logout = new FontAwesome.Sharp.IconPictureBox();
             this.PICT_INICIO = new RJCodeAdvance.RJControls.RJCircularPictureBox();
             this.btn_Peluquero = new Guna.UI2.WinForms.Guna2Button();
@@ -48,11 +50,12 @@
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
             this.panel_Conteiner.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbInico)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelLogo.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panel_Opciones.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tp_Loguot.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Logout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PICT_INICIO)).BeginInit();
             this.panel_Botones.SuspendLayout();
@@ -71,24 +74,40 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pcbInico);
+            this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1019, 689);
             this.panel1.TabIndex = 3;
             // 
-            // pcbInico
+            // tableLayoutPanel1
             // 
-            this.pcbInico.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pcbInico.Image = global::PeluTop_Practica.Properties.Resources.BARBERSHOP;
-            this.pcbInico.Location = new System.Drawing.Point(123, 115);
-            this.pcbInico.MaximumSize = new System.Drawing.Size(800, 450);
-            this.pcbInico.Name = "pcbInico";
-            this.pcbInico.Size = new System.Drawing.Size(800, 450);
-            this.pcbInico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbInico.TabIndex = 2;
-            this.pcbInico.TabStop = false;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 1, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1019, 689);
+            this.tableLayoutPanel1.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::PeluTop_Practica.Properties.Resources.BARBERSHOP;
+            this.pictureBox1.Location = new System.Drawing.Point(53, 193);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(911, 301);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // btnAcercaDe
             // 
@@ -147,7 +166,7 @@
             this.panel_Opciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 217F));
             this.panel_Opciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.panel_Opciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.panel_Opciones.Controls.Add(this.tableLayoutPanel1, 0, 9);
+            this.panel_Opciones.Controls.Add(this.tp_Loguot, 0, 9);
             this.panel_Opciones.Controls.Add(this.PICT_INICIO, 0, 1);
             this.panel_Opciones.Controls.Add(this.btnAcercaDe, 0, 7);
             this.panel_Opciones.Controls.Add(this.btn_Peluquero, 0, 5);
@@ -171,22 +190,22 @@
             this.panel_Opciones.TabIndex = 5;
             this.panel_Opciones.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // tableLayoutPanel1
+            // tp_Loguot
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.97129F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.05577F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.9729382F));
-            this.tableLayoutPanel1.Controls.Add(this.btn_Logout, 1, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 693);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(211, 54);
-            this.tableLayoutPanel1.TabIndex = 3;
+            this.tp_Loguot.ColumnCount = 3;
+            this.tp_Loguot.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.97129F));
+            this.tp_Loguot.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.05577F));
+            this.tp_Loguot.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.9729382F));
+            this.tp_Loguot.Controls.Add(this.btn_Logout, 1, 1);
+            this.tp_Loguot.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tp_Loguot.Location = new System.Drawing.Point(3, 693);
+            this.tp_Loguot.Name = "tp_Loguot";
+            this.tp_Loguot.RowCount = 3;
+            this.tp_Loguot.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0F));
+            this.tp_Loguot.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tp_Loguot.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0F));
+            this.tp_Loguot.Size = new System.Drawing.Size(211, 54);
+            this.tp_Loguot.TabIndex = 6;
             // 
             // btn_Logout
             // 
@@ -203,7 +222,7 @@
             this.btn_Logout.Size = new System.Drawing.Size(51, 48);
             this.btn_Logout.TabIndex = 7;
             this.btn_Logout.TabStop = false;
-            this.btn_Logout.Click += new System.EventHandler(this.iconPictureBox1_Click);
+            this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
             // 
             // PICT_INICIO
             // 
@@ -361,17 +380,19 @@
             this.Controls.Add(this.panel_Botones);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "lblTituloFormHijo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.panel_Conteiner.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbInico)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelLogo.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
             this.panel_Opciones.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tp_Loguot.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_Logout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PICT_INICIO)).EndInit();
             this.panel_Botones.ResumeLayout(false);
@@ -394,10 +415,11 @@
         private FontAwesome.Sharp.IconButton btnMaximizar;
         private FontAwesome.Sharp.IconButton btnMinimizar;
         private System.Windows.Forms.Panel panel_Botones;
-        private System.Windows.Forms.PictureBox pcbInico;
-        private FontAwesome.Sharp.IconPictureBox btn_Logout;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         public System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.Panel panel_Conteiner;
+        private System.Windows.Forms.TableLayoutPanel tp_Loguot;
+        private FontAwesome.Sharp.IconPictureBox btn_Logout;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
