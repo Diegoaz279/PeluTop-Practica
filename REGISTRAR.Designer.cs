@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(REGISTRAR));
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnCerrar = new FontAwesome.Sharp.IconButton();
-            this.btniNGRESAR = new RJCodeAdvance.RJControls.RJButton();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtCorreo = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtUsuario = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtContrasena = new RJCodeAdvance.RJControls.RJTextBox();
-            this.panel2.SuspendLayout();
+            this.panelRegistrarImg = new System.Windows.Forms.Panel();
+            this.btnCerrar = new FontAwesome.Sharp.IconButton();
+            this.btniRegistrar = new RJCodeAdvance.RJControls.RJButton();
+            this.panelRegistrarImg.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -48,58 +48,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::PeluTop_Practica.Properties.Resources.Captura_de_pantalla_2024_12_03_230501;
-            this.panel2.Controls.Add(this.btnCerrar);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(602, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(599, 636);
-            this.panel2.TabIndex = 9;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.BackColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.RectangleXmark;
-            this.btnCerrar.IconColor = System.Drawing.Color.White;
-            this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCerrar.IconSize = 50;
-            this.btnCerrar.Location = new System.Drawing.Point(549, 12);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(38, 48);
-            this.btnCerrar.TabIndex = 10;
-            this.btnCerrar.UseVisualStyleBackColor = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // btniNGRESAR
-            // 
-            this.btniNGRESAR.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btniNGRESAR.BackColor = System.Drawing.Color.White;
-            this.btniNGRESAR.BackgroundColor = System.Drawing.Color.White;
-            this.btniNGRESAR.BorderColor = System.Drawing.Color.Black;
-            this.btniNGRESAR.BorderRadius = 20;
-            this.btniNGRESAR.BorderSize = 0;
-            this.btniNGRESAR.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btniNGRESAR.FlatAppearance.BorderSize = 0;
-            this.btniNGRESAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btniNGRESAR.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F, System.Drawing.FontStyle.Bold);
-            this.btniNGRESAR.ForeColor = System.Drawing.Color.Black;
-            this.btniNGRESAR.Location = new System.Drawing.Point(213, 520);
-            this.btniNGRESAR.Name = "btniNGRESAR";
-            this.btniNGRESAR.Size = new System.Drawing.Size(150, 46);
-            this.btniNGRESAR.TabIndex = 41;
-            this.btniNGRESAR.Text = "REGISTRAR";
-            this.btniNGRESAR.TextColor = System.Drawing.Color.Black;
-            this.btniNGRESAR.UseVisualStyleBackColor = false;
-            this.btniNGRESAR.Click += new System.EventHandler(this.btniNGRESAR_Click_1);
             // 
             // label2
             // 
@@ -202,27 +150,78 @@
             this.txtContrasena.Texts = "";
             this.txtContrasena.UnderlinedStyle = false;
             // 
+            // panelRegistrarImg
+            // 
+            this.panelRegistrarImg.BackgroundImage = global::PeluTop_Practica.Properties.Resources.Captura_de_pantalla_2024_12_03_230501;
+            this.panelRegistrarImg.Controls.Add(this.btnCerrar);
+            this.panelRegistrarImg.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelRegistrarImg.Location = new System.Drawing.Point(602, 0);
+            this.panelRegistrarImg.Name = "panelRegistrarImg";
+            this.panelRegistrarImg.Size = new System.Drawing.Size(599, 636);
+            this.panelRegistrarImg.TabIndex = 52;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.ForeColor = System.Drawing.Color.Transparent;
+            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.RectangleXmark;
+            this.btnCerrar.IconColor = System.Drawing.Color.White;
+            this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCerrar.IconSize = 50;
+            this.btnCerrar.Location = new System.Drawing.Point(549, 12);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(38, 48);
+            this.btnCerrar.TabIndex = 10;
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
+            // 
+            // btniRegistrar
+            // 
+            this.btniRegistrar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btniRegistrar.BackColor = System.Drawing.Color.White;
+            this.btniRegistrar.BackgroundColor = System.Drawing.Color.White;
+            this.btniRegistrar.BorderColor = System.Drawing.Color.Black;
+            this.btniRegistrar.BorderRadius = 20;
+            this.btniRegistrar.BorderSize = 0;
+            this.btniRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btniRegistrar.FlatAppearance.BorderSize = 0;
+            this.btniRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btniRegistrar.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F, System.Drawing.FontStyle.Bold);
+            this.btniRegistrar.ForeColor = System.Drawing.Color.Black;
+            this.btniRegistrar.Location = new System.Drawing.Point(217, 520);
+            this.btniRegistrar.Name = "btniRegistrar";
+            this.btniRegistrar.Size = new System.Drawing.Size(150, 46);
+            this.btniRegistrar.TabIndex = 42;
+            this.btniRegistrar.Text = "REGISTRAR";
+            this.btniRegistrar.TextColor = System.Drawing.Color.Black;
+            this.btniRegistrar.UseVisualStyleBackColor = false;
+            this.btniRegistrar.Click += new System.EventHandler(this.btniRegistrar_Click);
+            // 
             // REGISTRAR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(39)))), ((int)(((byte)(75)))));
             this.ClientSize = new System.Drawing.Size(1201, 636);
+            this.Controls.Add(this.btniRegistrar);
+            this.Controls.Add(this.panelRegistrarImg);
             this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.btniNGRESAR);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "REGISTRAR";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "REGISTRAR";
             this.Load += new System.EventHandler(this.REGISTRAR_Load);
-            this.panel2.ResumeLayout(false);
+            this.panelRegistrarImg.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,13 +230,13 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
-        private FontAwesome.Sharp.IconButton btnCerrar;
-        private RJCodeAdvance.RJControls.RJButton btniNGRESAR;
         private System.Windows.Forms.Label label2;
         private RJCodeAdvance.RJControls.RJTextBox txtNombre;
         private RJCodeAdvance.RJControls.RJTextBox txtCorreo;
         private RJCodeAdvance.RJControls.RJTextBox txtUsuario;
         private RJCodeAdvance.RJControls.RJTextBox txtContrasena;
+        private System.Windows.Forms.Panel panelRegistrarImg;
+        private FontAwesome.Sharp.IconButton btnCerrar;
+        private RJCodeAdvance.RJControls.RJButton btniRegistrar;
     }
 }

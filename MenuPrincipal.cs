@@ -11,14 +11,12 @@ using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
 using Modelo_De_Negocio;
 
-
-
 namespace PeluTop_Practica
 {
     public partial class lblTituloFormHijo : Form
     {
         // Instancia de la clase de negocio
-        Modelo_De_Negocio.Metodos metodos = new Modelo_De_Negocio.Metodos();
+        Modelo_De_Negocio.MostrarFormHijo formHijo = new Modelo_De_Negocio.MostrarFormHijo();
         public lblTituloFormHijo()
         {
             InitializeComponent();
@@ -76,7 +74,7 @@ namespace PeluTop_Practica
             INICIO inicio = new INICIO();
 
             //Llamar al método para mostrar el formulario en el panel panel_Conteiner
-            metodos.MostrarFormularioEnPanel(inicio, panel_Conteiner);
+            formHijo.MostrarFormularioEnPanel(inicio, panel_Conteiner);
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -90,7 +88,7 @@ namespace PeluTop_Practica
             PELUQUEROS pELUQUEROS = new PELUQUEROS(this);
 
             // Llamar al método para mostrar el formulario en el panel `panel_Conteiner`
-            metodos.MostrarFormularioEnPanel(pELUQUEROS, panel_Conteiner);
+            formHijo.MostrarFormularioEnPanel(pELUQUEROS, panel_Conteiner);
         }
 
      //picture box inicio
@@ -103,7 +101,7 @@ namespace PeluTop_Practica
            ACERCA_DE acercaDe = new ACERCA_DE();
            
             // Llamar al método para mostrar el formulario en el panel `panel_Conteiner`
-            metodos.MostrarFormularioEnPanel(acercaDe, panel_Conteiner);
+            formHijo.MostrarFormularioEnPanel(acercaDe, panel_Conteiner);
         }
 
         private void iconPictureBox1_Click(object sender, EventArgs e)

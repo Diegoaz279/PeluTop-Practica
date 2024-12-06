@@ -22,11 +22,13 @@ namespace PeluTop_Practica
             Task<string> task = new Task<string>(Solicitud);
             task.Start();
             string resultado = await task;
+            MessageBox.Show("Cita Guardada Con Exito!");
+            
             this.Dispose();
         }
         private string Solicitud()
         {
-            Thread.Sleep(10000);
+            Thread.Sleep(8000);
             return "Terminada La solicitud";
         }
 

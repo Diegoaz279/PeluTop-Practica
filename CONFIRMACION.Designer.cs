@@ -36,17 +36,17 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.cmbPeluquero = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtPeluquero = new Guna.UI2.WinForms.Guna2TextBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.cmbServicio = new Guna.UI2.WinForms.Guna2ComboBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
-            this.cmbPrecio = new Guna.UI2.WinForms.Guna2ComboBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.dtpFecha = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.cmbHora = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtServicio = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPrecio = new Guna.UI2.WinForms.Guna2TextBox();
             this.Panel_Conformacion.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -101,7 +101,7 @@
             this.btn_Confirmacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btn_Confirmacion.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btn_Confirmacion.BorderColor = System.Drawing.Color.Red;
-            this.btn_Confirmacion.BorderRadius = 15;
+            this.btn_Confirmacion.BorderRadius = 1;
             this.btn_Confirmacion.BorderSize = 0;
             this.btn_Confirmacion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Confirmacion.FlatAppearance.BorderSize = 0;
@@ -123,7 +123,7 @@
             this.btn_Atras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btn_Atras.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btn_Atras.BorderColor = System.Drawing.Color.Red;
-            this.btn_Atras.BorderRadius = 14;
+            this.btn_Atras.BorderRadius = 1;
             this.btn_Atras.BorderSize = 0;
             this.btn_Atras.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Atras.FlatAppearance.BorderSize = 0;
@@ -196,7 +196,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.18182F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.72727F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel4.Controls.Add(this.cmbPeluquero, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.txtPeluquero, 1, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 77);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -207,25 +207,29 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(275, 139);
             this.tableLayoutPanel4.TabIndex = 2;
             // 
-            // cmbPeluquero
+            // txtPeluquero
             // 
-            this.cmbPeluquero.AutoRoundedCorners = true;
-            this.cmbPeluquero.BackColor = System.Drawing.Color.Transparent;
-            this.cmbPeluquero.BorderColor = System.Drawing.Color.Black;
-            this.cmbPeluquero.BorderRadius = 23;
-            this.cmbPeluquero.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbPeluquero.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbPeluquero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPeluquero.FillColor = System.Drawing.Color.Gainsboro;
-            this.cmbPeluquero.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbPeluquero.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbPeluquero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.cmbPeluquero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbPeluquero.ItemHeight = 43;
-            this.cmbPeluquero.Location = new System.Drawing.Point(42, 30);
-            this.cmbPeluquero.Name = "cmbPeluquero";
-            this.cmbPeluquero.Size = new System.Drawing.Size(216, 49);
-            this.cmbPeluquero.TabIndex = 0;
+            this.txtPeluquero.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPeluquero.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPeluquero.DefaultText = "";
+            this.txtPeluquero.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPeluquero.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPeluquero.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPeluquero.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPeluquero.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPeluquero.FillColor = System.Drawing.Color.Gainsboro;
+            this.txtPeluquero.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPeluquero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtPeluquero.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPeluquero.Location = new System.Drawing.Point(43, 32);
+            this.txtPeluquero.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPeluquero.Name = "txtPeluquero";
+            this.txtPeluquero.PasswordChar = '\0';
+            this.txtPeluquero.PlaceholderText = "";
+            this.txtPeluquero.ReadOnly = true;
+            this.txtPeluquero.SelectedText = "";
+            this.txtPeluquero.Size = new System.Drawing.Size(214, 59);
+            this.txtPeluquero.TabIndex = 0;
             // 
             // tableLayoutPanel5
             // 
@@ -233,7 +237,7 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel5.Controls.Add(this.cmbServicio, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.txtServicio, 1, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(284, 77);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -244,34 +248,14 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(233, 139);
             this.tableLayoutPanel5.TabIndex = 11;
             // 
-            // cmbServicio
-            // 
-            this.cmbServicio.AutoRoundedCorners = true;
-            this.cmbServicio.BackColor = System.Drawing.Color.Transparent;
-            this.cmbServicio.BorderColor = System.Drawing.Color.Black;
-            this.cmbServicio.BorderRadius = 23;
-            this.cmbServicio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbServicio.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbServicio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbServicio.FillColor = System.Drawing.Color.Gainsboro;
-            this.cmbServicio.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbServicio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.cmbServicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbServicio.ItemHeight = 43;
-            this.cmbServicio.Location = new System.Drawing.Point(14, 30);
-            this.cmbServicio.Name = "cmbServicio";
-            this.cmbServicio.Size = new System.Drawing.Size(203, 49);
-            this.cmbServicio.TabIndex = 0;
-            // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel6.Controls.Add(this.txtPrecio, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.label7, 0, 2);
-            this.tableLayoutPanel6.Controls.Add(this.cmbPrecio, 1, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(523, 77);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -290,26 +274,6 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 26);
             this.label7.TabIndex = 4;
-            // 
-            // cmbPrecio
-            // 
-            this.cmbPrecio.AutoRoundedCorners = true;
-            this.cmbPrecio.BackColor = System.Drawing.Color.Transparent;
-            this.cmbPrecio.BorderColor = System.Drawing.Color.Black;
-            this.cmbPrecio.BorderRadius = 24;
-            this.cmbPrecio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbPrecio.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbPrecio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPrecio.FillColor = System.Drawing.Color.Gainsboro;
-            this.cmbPrecio.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbPrecio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.cmbPrecio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbPrecio.ItemHeight = 44;
-            this.cmbPrecio.Location = new System.Drawing.Point(10, 30);
-            this.cmbPrecio.Name = "cmbPrecio";
-            this.cmbPrecio.Size = new System.Drawing.Size(134, 50);
-            this.cmbPrecio.TabIndex = 0;
             // 
             // tableLayoutPanel7
             // 
@@ -341,7 +305,6 @@
             // dtpFecha
             // 
             this.dtpFecha.AutoRoundedCorners = true;
-            this.dtpFecha.BorderRadius = 20;
             this.dtpFecha.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.dtpFecha.BorderThickness = 1;
             this.dtpFecha.Checked = true;
@@ -380,7 +343,6 @@
             this.cmbHora.AutoRoundedCorners = true;
             this.cmbHora.BackColor = System.Drawing.Color.Transparent;
             this.cmbHora.BorderColor = System.Drawing.Color.Black;
-            this.cmbHora.BorderRadius = 24;
             this.cmbHora.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbHora.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbHora.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -394,6 +356,54 @@
             this.cmbHora.Name = "cmbHora";
             this.cmbHora.Size = new System.Drawing.Size(130, 50);
             this.cmbHora.TabIndex = 1;
+            // 
+            // txtServicio
+            // 
+            this.txtServicio.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtServicio.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtServicio.DefaultText = "";
+            this.txtServicio.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtServicio.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtServicio.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtServicio.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtServicio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtServicio.FillColor = System.Drawing.Color.Gainsboro;
+            this.txtServicio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtServicio.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtServicio.Location = new System.Drawing.Point(15, 31);
+            this.txtServicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtServicio.Name = "txtServicio";
+            this.txtServicio.PasswordChar = '\0';
+            this.txtServicio.PlaceholderText = "";
+            this.txtServicio.ReadOnly = true;
+            this.txtServicio.SelectedText = "";
+            this.txtServicio.Size = new System.Drawing.Size(201, 61);
+            this.txtServicio.TabIndex = 2;
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPrecio.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPrecio.DefaultText = "";
+            this.txtPrecio.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPrecio.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPrecio.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrecio.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrecio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPrecio.FillColor = System.Drawing.Color.Gainsboro;
+            this.txtPrecio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtPrecio.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrecio.Location = new System.Drawing.Point(11, 31);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.PasswordChar = '\0';
+            this.txtPrecio.PlaceholderText = "";
+            this.txtPrecio.ReadOnly = true;
+            this.txtPrecio.SelectedText = "";
+            this.txtPrecio.Size = new System.Drawing.Size(132, 61);
+            this.txtPrecio.TabIndex = 3;
             // 
             // CONFIRMACION
             // 
@@ -436,15 +446,15 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpFecha;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbPeluquero;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbServicio;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbPrecio;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private Guna.UI2.WinForms.Guna2ComboBox cmbHora;
+        private Guna.UI2.WinForms.Guna2TextBox txtPeluquero;
+        private Guna.UI2.WinForms.Guna2TextBox txtServicio;
+        private Guna.UI2.WinForms.Guna2TextBox txtPrecio;
     }
 }

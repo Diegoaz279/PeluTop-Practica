@@ -130,8 +130,8 @@
   <data name="LOGIN FOTO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LOGIN FOTO1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CORTE DE PELO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CORTE DE PELO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Captura de pantalla 2024-12-03 230501" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de pantalla 2024-12-03 230501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CITAS EN CURSO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CITAS EN CURSO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,14 +142,23 @@
   <data name="PELUQEURO 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PELUQEURO 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CORTE DE PELO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CORTE DE PELO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CERRAR SESION" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CERRAR SESION.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LOGIN FOTO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LOGIN FOTO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="loading-7528_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading-7528_256.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CONFIRMACION" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CONFIRMACION.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PELUQEURO 2.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PELUQEURO 2.jpg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IMG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IMG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,23 +166,23 @@
   <data name="PULOT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PULOT.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BARBERSHOP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BARBERSHOP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CERQUILO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CERQUILO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="loading-7528_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loading-7528_256.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Peluquero2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peluquero2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PELUQEURO 2.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PELUQEURO 2.jpg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BARBERSHOP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BARBERSHOP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peluquero 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peluquero 3.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SERVICIOS DISPONIBLES" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SERVICIOS DISPONIBLES.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CONFIRMACION" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CONFIRMACION.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LOGIN FOTO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LOGIN FOTO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,7 +190,7 @@
   <data name="PELUQEURO 21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PELUQEURO 2.jpg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Captura de pantalla 2024-12-03 230501" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de pantalla 2024-12-03 230501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Peluquero 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peluquero 4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

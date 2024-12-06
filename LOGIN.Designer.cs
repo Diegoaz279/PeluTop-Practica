@@ -38,8 +38,8 @@
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.lblRegistrarse = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.rjTextBox1 = new RJCodeAdvance.RJControls.RJTextBox();
-            this.rjTextBox2 = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtContrasenao = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtUsuarioo = new RJCodeAdvance.RJControls.RJTextBox();
             this.panel1.SuspendLayout();
             this.panelLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
@@ -85,8 +85,8 @@
             this.panelLogin.Controls.Add(this.iconPictureBox2);
             this.panelLogin.Controls.Add(this.lblRegistrarse);
             this.panelLogin.Controls.Add(this.label1);
-            this.panelLogin.Controls.Add(this.rjTextBox1);
-            this.panelLogin.Controls.Add(this.rjTextBox2);
+            this.panelLogin.Controls.Add(this.txtContrasenao);
+            this.panelLogin.Controls.Add(this.txtUsuarioo);
             this.panelLogin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLogin.Location = new System.Drawing.Point(0, 0);
             this.panelLogin.Name = "panelLogin";
@@ -130,7 +130,7 @@
             this.btniNGRESAR.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btniNGRESAR.BackColor = System.Drawing.Color.White;
             this.btniNGRESAR.BackgroundColor = System.Drawing.Color.White;
-            this.btniNGRESAR.BorderColor = System.Drawing.Color.Black;
+            this.btniNGRESAR.BorderColor = System.Drawing.Color.Transparent;
             this.btniNGRESAR.BorderRadius = 20;
             this.btniNGRESAR.BorderSize = 0;
             this.btniNGRESAR.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -188,49 +188,49 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "LOGIN";
             // 
-            // rjTextBox1
+            // txtContrasenao
             // 
-            this.rjTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.rjTextBox1.BorderColor = System.Drawing.Color.Transparent;
-            this.rjTextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.rjTextBox1.BorderRadius = 20;
-            this.rjTextBox1.BorderSize = 1;
-            this.rjTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox1.Location = new System.Drawing.Point(101, 371);
-            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox1.Multiline = false;
-            this.rjTextBox1.Name = "rjTextBox1";
-            this.rjTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox1.PasswordChar = false;
-            this.rjTextBox1.PlaceholderColor = System.Drawing.Color.Gray;
-            this.rjTextBox1.PlaceholderText = "Contraseña";
-            this.rjTextBox1.Size = new System.Drawing.Size(229, 41);
-            this.rjTextBox1.TabIndex = 26;
-            this.rjTextBox1.Texts = "";
-            this.rjTextBox1.UnderlinedStyle = false;
+            this.txtContrasenao.BackColor = System.Drawing.SystemColors.Window;
+            this.txtContrasenao.BorderColor = System.Drawing.Color.Transparent;
+            this.txtContrasenao.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtContrasenao.BorderRadius = 20;
+            this.txtContrasenao.BorderSize = 1;
+            this.txtContrasenao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContrasenao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtContrasenao.Location = new System.Drawing.Point(101, 371);
+            this.txtContrasenao.Margin = new System.Windows.Forms.Padding(4);
+            this.txtContrasenao.Multiline = false;
+            this.txtContrasenao.Name = "txtContrasenao";
+            this.txtContrasenao.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtContrasenao.PasswordChar = true;
+            this.txtContrasenao.PlaceholderColor = System.Drawing.Color.Gray;
+            this.txtContrasenao.PlaceholderText = "Contraseña";
+            this.txtContrasenao.Size = new System.Drawing.Size(229, 41);
+            this.txtContrasenao.TabIndex = 26;
+            this.txtContrasenao.Texts = "";
+            this.txtContrasenao.UnderlinedStyle = false;
             // 
-            // rjTextBox2
+            // txtUsuarioo
             // 
-            this.rjTextBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.rjTextBox2.BorderColor = System.Drawing.Color.Transparent;
-            this.rjTextBox2.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.rjTextBox2.BorderRadius = 20;
-            this.rjTextBox2.BorderSize = 1;
-            this.rjTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox2.Location = new System.Drawing.Point(101, 309);
-            this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox2.Multiline = false;
-            this.rjTextBox2.Name = "rjTextBox2";
-            this.rjTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox2.PasswordChar = false;
-            this.rjTextBox2.PlaceholderColor = System.Drawing.Color.Gray;
-            this.rjTextBox2.PlaceholderText = "Usuario";
-            this.rjTextBox2.Size = new System.Drawing.Size(229, 41);
-            this.rjTextBox2.TabIndex = 27;
-            this.rjTextBox2.Texts = "";
-            this.rjTextBox2.UnderlinedStyle = false;
+            this.txtUsuarioo.BackColor = System.Drawing.SystemColors.Window;
+            this.txtUsuarioo.BorderColor = System.Drawing.Color.Transparent;
+            this.txtUsuarioo.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtUsuarioo.BorderRadius = 20;
+            this.txtUsuarioo.BorderSize = 1;
+            this.txtUsuarioo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuarioo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtUsuarioo.Location = new System.Drawing.Point(101, 309);
+            this.txtUsuarioo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsuarioo.Multiline = false;
+            this.txtUsuarioo.Name = "txtUsuarioo";
+            this.txtUsuarioo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtUsuarioo.PasswordChar = false;
+            this.txtUsuarioo.PlaceholderColor = System.Drawing.Color.Gray;
+            this.txtUsuarioo.PlaceholderText = "Usuario";
+            this.txtUsuarioo.Size = new System.Drawing.Size(229, 41);
+            this.txtUsuarioo.TabIndex = 27;
+            this.txtUsuarioo.Texts = "";
+            this.txtUsuarioo.UnderlinedStyle = false;
             // 
             // fmlLogin
             // 
@@ -267,7 +267,7 @@
         private System.Windows.Forms.LinkLabel lblRegistrarse;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
-        private RJCodeAdvance.RJControls.RJTextBox rjTextBox1;
-        private RJCodeAdvance.RJControls.RJTextBox rjTextBox2;
+        private RJCodeAdvance.RJControls.RJTextBox txtContrasenao;
+        private RJCodeAdvance.RJControls.RJTextBox txtUsuarioo;
     }
 }

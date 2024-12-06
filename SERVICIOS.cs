@@ -9,38 +9,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace PeluTop_Practica
 {
     public partial class SERVICIOS : Form
     {
         private lblTituloFormHijo formPrincipal;
-        private Modelo_De_Negocio.Metodos metodos = new Modelo_De_Negocio.Metodos();
-        public SERVICIOS(lblTituloFormHijo principal)
+        private Modelo_De_Negocio.MostrarFormHijo mostrarForm = new Modelo_De_Negocio.MostrarFormHijo();
+        private ConfirmacionCita confirmacionCita = new ConfirmacionCita();
+
+        public SERVICIOS(lblTituloFormHijo principal,ConfirmacionCita confirmacion)
         {
             InitializeComponent();
             formPrincipal = principal;
-           
-
-        }
-        private void btnPeluquero1_Click(object sender, EventArgs e)
-        {
-            
-           
-        }
-
-        private void btnServicio2_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void btnPeluquero3_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnServicio4_Click(object sender, EventArgs e)
-        {
-            
+            confirmacionCita = confirmacion;
         }
 
         private void SERVICIOS_Load(object sender, EventArgs e)
@@ -48,45 +30,40 @@ namespace PeluTop_Practica
 
         }
 
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_Lavado_Click(object sender, EventArgs e)
         {
+            confirmacionCita.IdServicio = 1;
             // Crear el formulario que se desea mostrar
-           CONFIRMACION cONFIRMACION = new CONFIRMACION(formPrincipal);
-
+            CONFIRMACION confirmacion = new CONFIRMACION(formPrincipal,confirmacionCita);
             // Usar la referencia al formulario principal para acceder a su panel
-            metodos.MostrarFormularioEnPanel(cONFIRMACION, formPrincipal.panel_Conteiner);
+            mostrarForm.MostrarFormularioEnPanel(confirmacion, formPrincipal.panel_Conteiner);
         }
 
         private void btn_Servicio2_Click(object sender, EventArgs e)
         {
+            confirmacionCita.IdServicio = 2;
             // Crear el formulario que se desea mostrar
-            CONFIRMACION cONFIRMACION = new CONFIRMACION(formPrincipal);
-
+            CONFIRMACION confirmacion = new CONFIRMACION(formPrincipal,confirmacionCita);
             // Usar la referencia al formulario principal para acceder a su panel
-            metodos.MostrarFormularioEnPanel(cONFIRMACION, formPrincipal.panel_Conteiner);
+            mostrarForm.MostrarFormularioEnPanel(confirmacion, formPrincipal.panel_Conteiner);
         }
 
         private void btn_Servicio3_Click(object sender, EventArgs e)
         {
+            confirmacionCita.IdServicio = 3;
             // Crear el formulario que se desea mostrar
-            CONFIRMACION cONFIRMACION = new CONFIRMACION(formPrincipal);
-
+            CONFIRMACION confirmacion = new CONFIRMACION(formPrincipal, confirmacionCita);
             // Usar la referencia al formulario principal para acceder a su panel
-            metodos.MostrarFormularioEnPanel(cONFIRMACION, formPrincipal.panel_Conteiner);
+            mostrarForm.MostrarFormularioEnPanel(confirmacion, formPrincipal.panel_Conteiner);
         }
 
         private void btn_Servicio4_Click(object sender, EventArgs e)
         {
+            confirmacionCita.IdServicio = 4;
             // Crear el formulario que se desea mostrar
-            CONFIRMACION cONFIRMACION = new CONFIRMACION(formPrincipal);
-
+            CONFIRMACION confirmacion = new CONFIRMACION(formPrincipal,confirmacionCita);
             // Usar la referencia al formulario principal para acceder a su panel
-            metodos.MostrarFormularioEnPanel(cONFIRMACION, formPrincipal.panel_Conteiner);
+            mostrarForm.MostrarFormularioEnPanel(confirmacion, formPrincipal.panel_Conteiner);
         }
     }
 }
