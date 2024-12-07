@@ -52,9 +52,9 @@
             this.btn_Servicio1 = new RJCodeAdvance.RJControls.RJButton();
             this.rjCircularPictureBox3 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
             this.rjCircularPictureBox5 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
+            this.lblCequilllo = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblCequilllo = new System.Windows.Forms.Label();
             this.Panel_Servicios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox2)).BeginInit();
@@ -473,6 +473,18 @@
             this.rjCircularPictureBox5.TabIndex = 56;
             this.rjCircularPictureBox5.TabStop = false;
             // 
+            // lblCequilllo
+            // 
+            this.lblCequilllo.AutoSize = true;
+            this.lblCequilllo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCequilllo.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCequilllo.Location = new System.Drawing.Point(644, 302);
+            this.lblCequilllo.Name = "lblCequilllo";
+            this.lblCequilllo.Size = new System.Drawing.Size(244, 26);
+            this.lblCequilllo.TabIndex = 59;
+            this.lblCequilllo.Text = "Cerquillo";
+            this.lblCequilllo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -499,18 +511,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65.92179F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1260, 179);
             this.tableLayoutPanel1.TabIndex = 64;
-            // 
-            // lblCequilllo
-            // 
-            this.lblCequilllo.AutoSize = true;
-            this.lblCequilllo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCequilllo.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCequilllo.Location = new System.Drawing.Point(644, 302);
-            this.lblCequilllo.Name = "lblCequilllo";
-            this.lblCequilllo.Size = new System.Drawing.Size(244, 26);
-            this.lblCequilllo.TabIndex = 59;
-            this.lblCequilllo.Text = "Cerquillo";
-            this.lblCequilllo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // SERVICIOS
             // 

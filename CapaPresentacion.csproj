@@ -247,7 +247,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Datos\Datos.csproj">
-      <Project>{2685117c-20b4-4330-959f-747eb1a7ef10}</Project>
+      <Project>{0369b54e-0781-40f5-9c05-efefc348128c}</Project>
       <Name>Datos</Name>
     </ProjectReference>
     <ProjectReference Include="..\Modelo De Negocio\ModeloDeNegocio.csproj">
@@ -293,6 +293,18 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sEERVICIOS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PRECIO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FECHA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HORA.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

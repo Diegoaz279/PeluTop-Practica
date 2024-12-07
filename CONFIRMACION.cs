@@ -12,6 +12,7 @@ using static Guna.UI2.Native.WinApi;
 using Modelo_De_Negocio;
 using Datos;
 
+
 namespace PeluTop_Practica
 {
     public partial class CONFIRMACION : Form
@@ -27,22 +28,23 @@ namespace PeluTop_Practica
             AsignarDatosPeluquero();  // Llama al método para asignar el nombre del peluquero
             AsignarDatosServicio();
         }
+        // Método para asignar los datos del peluquero
+        // Método para asignar los datos del peluquero
         private void AsignarDatosPeluquero()
         {
-            // Asegúrate de que el IdPeluquero es válido
-            if (confirmacionCita.IdPeluquero == 0)
+            if (confirmacionCita.Peluquero == 0)
             {
                 MessageBox.Show("ID del peluquero no está configurado.");
                 return;
             }
 
-            using (var db = new PeluTopDBEntities())  // Asegúrate de que el contexto se llama correctamente
+            using (var db = new PeluTopDBEntities())
             {
-                var peluquero = db.Peluqueros.FirstOrDefault(p => p.IdPeluquero == confirmacionCita.IdPeluquero );
+                var peluquero = db.Peluqueros.FirstOrDefault(p => p.IdPeluquero == confirmacionCita.Peluquero);
 
                 if (peluquero != null)
                 {
-                    txtPeluquero.Text = peluquero.Nombre;  // Asumiendo que la propiedad es 'Nombre'
+                    txtPeluquero.Text = peluquero.Nombre;
                 }
                 else
                 {
@@ -50,10 +52,11 @@ namespace PeluTop_Practica
                 }
             }
         }
+
+        // Método para asignar los datos del servicio
         private void AsignarDatosServicio()
         {
-            // Verifica que el servicio esté asignado a la cita (asumiendo que confirmacionCita tiene un IdServicio)
-            if (confirmacionCita.IdServicio == 0)
+            if (confirmacionCita.Servicio == 0)
             {
                 MessageBox.Show("ID del servicio no está configurado.");
                 return;
@@ -61,16 +64,18 @@ namespace PeluTop_Practica
 
             using (var db = new PeluTopDBEntities())
             {
-                var servicio = db.Servicios.FirstOrDefault(s => s.IdServicio == confirmacionCita.IdServicio);
+                var servicio = db.Servicios.FirstOrDefault(s => s.IdServicio == confirmacionCita.Servicio);
 
                 if (servicio != null)
                 {
-                    txtServicio.Text = servicio.Nombre;  // Asumiendo que la propiedad se llama 'Nombre'
-                    txtPrecio.Text = servicio.Precio.ToString("C");  // Formatea el precio como moneda
+                    txtServicio.Text = servicio.Nombre;
+                    txtDuracion.Text = $"{servicio.Duracion} minutos";
+                    txtPrecio.Text = servicio.Precio.ToString("C"); // Formato de moneda
                 }
                 else
                 {
                     txtServicio.Text = "Servicio no encontrado";
+                    txtDuracion.Text = "Duración no disponible";
                     txtPrecio.Text = "Precio no disponible";
                 }
             }
@@ -78,9 +83,34 @@ namespace PeluTop_Practica
 
         private void btn_Confirmacion_Click(object sender, EventArgs e)
         {
-            PantallaCargaConf pantallacarga = new PantallaCargaConf();
-            formHijo.MostrarFormularioEnPanel(pantallacarga, formPrincipal.panel_Conteiner);
+            try
+            {
+                // Crear una nueva instancia de la cita
+                Datos.Citas nuevaCita = new Datos.Citas
+                {
+                    IdUsuario = confirmacionCita.IdUsuario, // ID del usuario logueado
+                    Peluquero = confirmacionCita.Peluquero, // ID del peluquero seleccionado
+                    Servicio = confirmacionCita.Servicio,   // ID del servicio seleccionado
+                    Fecha = DateTime.Parse(txtFecha.Text),  // Fecha de la cita
+                    Precio = decimal.Parse(txtPrecio.Text), // Convertir el precio a decimal
+                    Duracion = int.Parse(txtDuracion.Text)  // Convertir la duración a entero
+                };
+
+                // Guardar la cita en la base de datos
+                ConfirmacionCita modeloCita = new ConfirmacionCita();
+                bool guardado = modeloCita.GuardarCita(nuevaCita);
+
+                // Mostrar el resultado al usuario
+                MessageBox.Show(guardado ? "Cita confirmada exitosamente." : "Error al confirmar la cita.");
+                if (guardado) this.Close(); // Cerrar el formulario si todo salió bien
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
         }
+
+
 
         private void btn_Atras_Click(object sender, EventArgs e)
         {

@@ -32,7 +32,7 @@ namespace PeluTop_Practica
 
         private void btn_Lavado_Click(object sender, EventArgs e)
         {
-            confirmacionCita.IdServicio = 1;
+            confirmacionCita.Servicio = 1;
             // Crear el formulario que se desea mostrar
             CONFIRMACION confirmacion = new CONFIRMACION(formPrincipal,confirmacionCita);
             // Usar la referencia al formulario principal para acceder a su panel
@@ -41,7 +41,7 @@ namespace PeluTop_Practica
 
         private void btn_Servicio2_Click(object sender, EventArgs e)
         {
-            confirmacionCita.IdServicio = 2;
+            confirmacionCita.Servicio = 2;
             // Crear el formulario que se desea mostrar
             CONFIRMACION confirmacion = new CONFIRMACION(formPrincipal,confirmacionCita);
             // Usar la referencia al formulario principal para acceder a su panel
@@ -50,7 +50,7 @@ namespace PeluTop_Practica
 
         private void btn_Servicio3_Click(object sender, EventArgs e)
         {
-            confirmacionCita.IdServicio = 3;
+            confirmacionCita.Servicio = 3;
             // Crear el formulario que se desea mostrar
             CONFIRMACION confirmacion = new CONFIRMACION(formPrincipal, confirmacionCita);
             // Usar la referencia al formulario principal para acceder a su panel
@@ -59,7 +59,7 @@ namespace PeluTop_Practica
 
         private void btn_Servicio4_Click(object sender, EventArgs e)
         {
-            confirmacionCita.IdServicio = 4;
+            confirmacionCita.Servicio = 4;
             // Crear el formulario que se desea mostrar
             CONFIRMACION confirmacion = new CONFIRMACION(formPrincipal,confirmacionCita);
             // Usar la referencia al formulario principal para acceder a su panel

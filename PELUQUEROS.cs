@@ -22,8 +22,8 @@ namespace PeluTop_Practica
         }
         private void btn_Peluquero1_Click(object sender, EventArgs e)
         {
-            // Asigna directamente el IdPeluquero en la instancia de ConfirmacionCita
-            confirmacionCita.IdPeluquero = 1;
+             // Asigna directamente el IdPeluquero en la instancia de ConfirmacionCita
+            confirmacionCita.Peluquero = 1;
             //instancia el formulario servicio
             SERVICIOS servicio = new SERVICIOS(formPrincipal, confirmacionCita);
             //referencia al formulario principal para acceder a su panel
@@ -33,7 +33,7 @@ namespace PeluTop_Practica
         private void btnPeluquero2_Click(object sender, EventArgs e)
         {
             // Asigna directamente el IdPeluquero en la instancia de ConfirmacionCita
-            confirmacionCita.IdPeluquero = 2;
+            confirmacionCita.Peluquero = 2;
             //instancia el formulario servicio
             SERVICIOS servicio = new SERVICIOS(formPrincipal,confirmacionCita);
             //referencia al formulario principal para acceder a su panel
@@ -42,7 +42,7 @@ namespace PeluTop_Practica
         private void btnPeluquero3_Click(object sender, EventArgs e)
         {
             // Asigna directamente el IdPeluquero en la instancia de ConfirmacionCita
-            confirmacionCita.IdPeluquero = 3; ;
+            confirmacionCita.Peluquero = 3; ;
             //instancia el formulario servicio
             SERVICIOS servicio = new SERVICIOS(formPrincipal,confirmacionCita);
             //referencia al formulario principal para acceder a su panel
@@ -51,7 +51,7 @@ namespace PeluTop_Practica
         private void btnPeluquero4_Click_1(object sender, EventArgs e)
         {
             // Asigna directamente el IdPeluquero en la instancia de ConfirmacionCita
-            confirmacionCita.IdPeluquero = 4;
+            confirmacionCita.Peluquero = 4;
             //instancia el formulario servicio
             SERVICIOS servicio = new SERVICIOS(formPrincipal, confirmacionCita);
             //referencia al formulario principal para acceder a su panel
